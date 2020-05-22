@@ -223,7 +223,6 @@ export const Footer = styled.div`
     align-items: center;
     width: 100%;
     background-size: cover;
-
     img {
       display: flex;
       height: 50px;
@@ -265,6 +264,28 @@ export const Copyright = styled.p`
     width: 100%;
     background-size: cover;
     font-weight: 200;
+  `
+
+  export const Whatsapp = styled.div`
+      a {
+      position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#20b3af;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    }
+
+    i {
+      margin-top:16px
+    }
+
   `
 
  

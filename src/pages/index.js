@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container, Content, Banner, About, Inovation, Footer, Copyright } from './styles';
+import { Container, Content, Banner, About, Inovation, Footer, Whatsapp, Copyright } from './styles';
 import GlobalStyle  from '../styles/reset';
 import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logo-white.svg';
@@ -16,8 +16,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 
 
+
 export default function Index() {
+
   return (
+    
     <>
       <GlobalStyle/>
       <Container>
@@ -51,7 +54,14 @@ export default function Index() {
 
       </Inovation>
 
+      <Whatsapp>
+          <a href="https://api.whatsapp.com/send?phone=5583981124179&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Saude%20M%C3%B3vel!">
+          <i className="fa fa-whatsapp"></i>
+          </a>
+      </Whatsapp>
+
       <Footer>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
         <div>
           <img src={LogoWhite} alt="logo" />
           <div>
@@ -61,6 +71,7 @@ export default function Index() {
          
         </div>
         <Copyright>Senior Saúde - &copy; {new Date().getFullYear()} Copyright</Copyright>
+
       </Footer>
 
     </>
