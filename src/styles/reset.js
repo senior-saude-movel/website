@@ -34,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font: 16px Roboto, sans-serif; 
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;

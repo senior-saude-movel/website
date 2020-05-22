@@ -126,7 +126,6 @@ export const About = styled.div`
       margin-top: 20px;
       flex: 1;
       text-align: justify;
-      width: 600px;
       color: #000;
 
 
@@ -169,7 +168,6 @@ export const Inovation = styled.div`
       font-size: 30px;
       color: #000;
       flex: 1;
-      margin: 30px;
     }
 
     p {
@@ -178,7 +176,6 @@ export const Inovation = styled.div`
       flex: 1;
       text-align: justify;
       line-height: 150%;
-      width: 600px;
       color: #000;
 
 
@@ -186,65 +183,6 @@ export const Inovation = styled.div`
 
   }
 
-`
-
-export const Profissionais = styled.div`
-  margin-top: 30px;
-  flex: 1;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  min-height: 40vh;
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 60px;
-      transition: 0.3s;
-
-      div {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        img {
-          height: 180px;
-          width: 200px;
-          border-radius: 5%;
-        }
-
-        h1 {
-            margin-top: 5px;
-            font-weight: bold;
-            font-size: 20px;
-            color: #000;
-            flex: 1;
-          }
-      }
-
-      div {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        p {
-          text-align: justify;
-          height: 60px;
-          font-size: 15px;
-          color: #000;
-          line-height: 150%;
-        
-
-        }
-
-      }
-
-    }
 `
 
 export const Footer = styled.div`

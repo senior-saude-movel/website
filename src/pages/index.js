@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container, Content, Banner, About, Inovation, Footer, Profissionais, Copyright } from './styles';
+import { Container, Content, Banner, About, Inovation, Footer, Copyright } from './styles';
 import GlobalStyle  from '../styles/reset';
 import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logo-white.svg';
@@ -8,8 +8,8 @@ import LogoSenior from '../assets/senior.svg';
 import LogoInsta from '../assets/instagram.svg';
 import LogoWhatsapp from '../assets/whatsapp.svg';
 import Healthy from '../assets/healthy.svg';
-import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
-import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
+// import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
+// import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
 import Idea from '../assets/idea.svg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -51,30 +51,6 @@ export default function Index() {
 
       </Inovation>
 
-
-
-      <Profissionais>
-        <div>
-          <div>
-            <img src={ProfessionalMarcela} alt="healthy"/>  
-            <h1>Marcela Pimentel</h1>
-          </div>
-          <div>
-            <p>Mestranda em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB). Pós-graduanda em Fisioterapia Neurofuncional Adulto e Infantil pela Faculdades Integradas de Patos (FIP). Atualmente, é professora universitária na área de neurologia e pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES) desenvolvendo projetos voltados ao monitoramento remoto de idosos com uso da tecnologia. É membro do Laboratório de Neurociências e Comportamento Aplicadas (LANEC/UEPB). Possui ampla experiência no tratamento das doenças crônico-neurodegenerativas comuns do envelhecimento.</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src={ProfessionalEujessika} alt="healthy"/>  
-            <h1>Eujessika Rodrigues</h1>
-          </div>
-          <div>
-            <p>Mestranda em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB). Pós-graduanda em Fisioterapia Neurofuncional Adulto e Infantil pela Faculdades Integradas de Patos (FIP). Atualmente, é professora universitária na área de neurologia e pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES) desenvolvendo projetos voltados ao monitoramento remoto de idosos com uso da tecnologia. É membro do Laboratório de Neurociências e Comportamento Aplicadas (LANEC/UEPB). Possui ampla experiência no tratamento das doenças crônico-neurodegenerativas comuns do envelhecimento.</p>
-          </div>
-        </div>
-        
-      </Profissionais>
       <Footer>
         <div>
           <img src={LogoWhite} alt="logo" />
