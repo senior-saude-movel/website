@@ -43,7 +43,7 @@ export const Banner = styled.div`
   min-height: 130vh;
   background-attachment: fixed;
   img {
-    width: 500px;
+    width: 300px;
   }
 
   div {
@@ -52,14 +52,14 @@ export const Banner = styled.div`
     display: flex;
     border-radius: 15px;
     flex-direction: column;
-    width: 500px;
+    width: 400px;
     height: 300px;
     justify-content: center;
     align-items: center;
 
 
     img {
-    width: 180px;
+    width: 300px;
     }
 
 
@@ -105,9 +105,7 @@ export const About = styled.div`
 
 
   img {
-    flex: 1;
     height: 300px;
-    margin-top: 20px;
   }
 
   div {
@@ -126,10 +124,18 @@ export const About = styled.div`
       margin-top: 20px;
       flex: 1;
       text-align: justify;
+
       color: #000;
 
 
     }
+
+    
+
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    flex-direction: column;
 
   }
 
@@ -168,6 +174,7 @@ export const Inovation = styled.div`
       font-size: 30px;
       color: #000;
       flex: 1;
+      margin: 30px;
     }
 
     p {
@@ -176,9 +183,21 @@ export const Inovation = styled.div`
       flex: 1;
       text-align: justify;
       line-height: 150%;
+      width: 600px;
       color: #000;
 
 
+    }
+
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+
+    div {
+      p {
+        font-size: 20px;
+        width: 296px;
+      }
     }
 
   }
@@ -247,7 +266,6 @@ export const Copyright = styled.p`
     background-size: cover;
     font-weight: 200;
   `
-
 
  
 
