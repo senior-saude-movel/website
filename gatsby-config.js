@@ -16,11 +16,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocketseat`,
-        short_name: `Rocketseat`,
+        name: `Senior Saude Movel`,
+        short_name: `Senior Saude Movel`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#7159c1`,
+        theme_color: `#20b3af`,
         display: `standalone`,
         icon: `src/assets/icon.png` // 512x512
       },
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `#7159c1`,
+        color: `#20b3af`,
       },
     },
     {
