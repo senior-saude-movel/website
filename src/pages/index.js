@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container, Content, Banner, About, Inovation, Footer, Whatsapp, Copyright } from './styles';
+import { Container, Content, Banner, About, Inovation, Footer, Services, Whatsapp, Copyright } from './styles';
 import GlobalStyle  from '../styles/reset';
 import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logo-white.svg';
@@ -51,10 +51,39 @@ export default function Index() {
         <FontAwesomeIcon icon={faCheckSquare} />
           <img src={Idea} alt="ideia" />
           <h1>Inovação</h1>
-          <p>Após profunda dedicação em estudos nessa área, a Sênior Saúde Móvel implementou uma estratégia tecnológica aos atendimentos fisioterapêuticos. Desenvolvemos um sistema de monitoramento remoto de idosos, que capta informações do paciente 24h por dia através de um smartwatch. Esse serviço auxilia na avaliação continuada, oferecendo dados cruciais para predição de condições adversas à saúde, bem como ajuda na tomada de decisão fisioterapêutica. Idosos em diferentes condições funcionais podem se beneficiar do monitoramento remoto. </p>
+          <p>Após profunda dedicação em estudos nessa área, a Sênior Saúde Móvel implementou uma estratégia tecnológica aos atendimentos fisioterapêuticos. Desenvolvemos um sistema de monitoramento remoto de idosos, que capta informações do paciente 24h por dia fazendo uso avançado de todo o potencial de relógios e pulseiras inteligentes. Esse serviço auxilia na avaliação continuada, oferecendo dados cruciais para predição de condições adversas à saúde, bem como ajuda na tomada de decisão fisioterapêutica. Idosos em diferentes condições funcionais podem se beneficiar do monitoramento remoto.</p>
         </div>
 
       </Inovation>
+
+      <Services>
+
+
+          <h1>Serviços</h1>
+          <p>A Sênior Saúde Móvel realiza atendimentos em fisioterapia em gerontologia e fisioterapia neurofuncional para idosos fundamentado em evidências.Os tratamentos realizados baseiam-se nos seguintes pilares: </p>
+
+
+      <section>
+        <div>
+          <i className="fa fa-edit"></i>
+          <h1>Tratamento Personalizado</h1>
+          <p>O idoso é motivado à tornar-se corresponsável da sua evolução terapêutica. O paciente é um componente ativo do seu tratamento. </p>
+        </div>
+
+        <div>
+            <i className="fa fa-edit"></i>
+            <h1>Autogerenciamento</h1>
+            <p>A estratégia terapêutica é definida para o nível funcional de cada idoso. Considerando as particularidades de cada indivíduo.</p>
+          </div>
+
+          <div>
+            <i className="fa fa-edit"></i>
+            <h1>Funcionalidade</h1>
+            <p>Voltamos nosso olhar para muito além do diagnóstico clínico, focamos a nossa atenção para a queixa funcional  e valorizamos as potencialidades que cada idoso apresenta.</p>
+          </div>
+      </section>
+
+      </Services>
 
       <Whatsapp>
           <a href="https://api.whatsapp.com/send?phone=5583981124179&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Saude%20M%C3%B3vel!">

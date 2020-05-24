@@ -211,6 +211,9 @@ export const Inovation = styled.div`
 
   }
 
+
+
+
   @media screen and (min-width: 320px) and (max-width: 768px ) {
 
     div {
@@ -221,6 +224,75 @@ export const Inovation = styled.div`
     }
 
   }
+
+`
+
+
+export const Services = styled.div`
+  flex: 1;
+  min-height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  align-items: center;
+
+    h1 {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  
+
+
+  section {
+    display: flex;
+    flex-direction: row;
+  div {
+    margin: 50px;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    i {
+      color: #165d72;
+      font-size: 30px;
+      margin: 10px;
+    }
+
+    h1 {
+      font-weight: bold;
+      color: #165d72;
+      font-size: 25px;
+    }
+
+    p {
+      margin: 10px;
+      color: #165d72;
+      text-align: center;
+    }
+
+
+    &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.6s;
+    }
+ 
+  }
+
+ 
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+}
 
 `
 
