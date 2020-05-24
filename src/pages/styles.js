@@ -20,16 +20,36 @@ export const Container = styled.header`
 
 export const Content = styled.section`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0 15px;
   height: 100%;
 
   img {
     width: 180px;
   }
-  `;
+
+  div {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #165d72;
+      margin: 5px;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: lighter;
+      color: #165d72;
+    }
+
+  }
+
+  `
 
 export const Banner = styled.div`
   background: url(${MedicalImg}) no-repeat center;
@@ -52,7 +72,7 @@ export const Banner = styled.div`
     display: flex;
     border-radius: 15px;
     flex-direction: column;
-    width: 400px;
+    width: 500px;
     height: 300px;
     justify-content: center;
     align-items: center;
@@ -64,7 +84,7 @@ export const Banner = styled.div`
 
 
   p {
-    font-size: 20px;
+    font-size: 16px;
     color: #20b3af;
     font-weight: bold;
   }
@@ -264,6 +284,14 @@ export const Copyright = styled.p`
     width: 100%;
     background-size: cover;
     font-weight: 200;
+
+    p{
+
+    }
+
+    img {
+      width: 120px;
+    }
   `
 
   export const Whatsapp = styled.div`

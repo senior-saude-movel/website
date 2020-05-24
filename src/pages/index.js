@@ -5,8 +5,6 @@ import GlobalStyle  from '../styles/reset';
 import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logo-white.svg';
 import LogoSenior from '../assets/senior.svg';
-import LogoInsta from '../assets/instagram.svg';
-import LogoWhatsapp from '../assets/whatsapp.svg';
 import Healthy from '../assets/healthy.svg';
 // import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
 // import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
@@ -26,13 +24,17 @@ export default function Index() {
       <Container>
         <Content>
           <img src={Logo} alt="logo" />
+          <div>
+            <h1>(83) 98112-4179</h1>
+            <p>seniorsaudemovel@gmail.com</p>
+          </div>
         </Content>
       </Container>
       <Banner>
       <img src={LogoWhite} alt="logo" />
         <div>
           <img src={LogoSenior} alt="logo" />
-          <p>Na palma da sua mão</p>
+          <p>Tecnologia para mais cuidados humanizados na melhor idade</p>
           <button>Saiba Mais</button>
         </div>
       </Banner>
@@ -63,14 +65,19 @@ export default function Index() {
       <Footer>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
         <div>
-          <img src={LogoWhite} alt="logo" />
+
           <div>
-            <img src={LogoInsta} alt="instagram" />
-            <img src={LogoWhatsapp} alt="whatsapp" />
+          R Francisco Roberto, nº 108, Centenário, CEP: 58428-222
           </div>
          
         </div>
-        <Copyright>Senior Saúde - &copy; {new Date().getFullYear()} Copyright</Copyright>
+
+        
+        <Copyright>
+
+        <img src={LogoWhite} alt="logo" />
+          <p>Senior Saúde - &copy; {new Date().getFullYear()} Copyright</p>
+          </Copyright>
 
       </Footer>
 
