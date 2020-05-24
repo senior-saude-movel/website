@@ -14,6 +14,8 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
+      <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+      <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <noscript>Use JavaScript dude!!</noscript>
         {props.preBodyComponents}
         <div

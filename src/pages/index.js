@@ -1,6 +1,11 @@
-import React from "react"
+import React from 'react';
 
-import { Container, Content, Banner, About, Inovation, Footer, Services, Whatsapp, Copyright } from './styles';
+import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, Slide, ServicesBottom, Whatsapp, Copyright } from './styles';
+
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+
+
 import GlobalStyle  from '../styles/reset';
 import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logo-white.svg';
@@ -8,6 +13,18 @@ import LogoSenior from '../assets/senior.svg';
 import Healthy from '../assets/healthy.svg';
 // import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
 // import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
+
+ import Haniot from '../assets/haniot.jpeg';
+ import Haniot2 from '../assets/haniot2.jpeg';
+ import Haniot3 from '../assets/haniot3.jpeg';
+ 
+ import LogoNutes from '../assets/logo-nutes.jpg';
+ import LogoFapesq from '../assets/logo-fapesq.jpg';
+ import LogoCentelha from '../assets/logo-centelha.jpg';
+
+// import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
+
+
 import Idea from '../assets/idea.svg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -56,14 +73,19 @@ export default function Index() {
 
       </Inovation>
 
-      <Services>
+
+      <ServicesTop>
 
 
+
+        <div>
           <h1>Serviços</h1>
           <p>A Sênior Saúde Móvel realiza atendimentos em fisioterapia em gerontologia e fisioterapia neurofuncional para idosos fundamentado em evidências.Os tratamentos realizados baseiam-se nos seguintes pilares: </p>
+        </div>
 
+        </ServicesTop>
 
-      <section>
+      <ServicesBottom>
         <div>
           <i className="fa fa-edit"></i>
           <h1>Tratamento Personalizado</h1>
@@ -81,15 +103,35 @@ export default function Index() {
             <h1>Funcionalidade</h1>
             <p>Voltamos nosso olhar para muito além do diagnóstico clínico, focamos a nossa atenção para a queixa funcional  e valorizamos as potencialidades que cada idoso apresenta.</p>
           </div>
-      </section>
+      </ServicesBottom>
 
-      </Services>
 
       <Whatsapp>
           <a href="https://api.whatsapp.com/send?phone=5583981124179&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Saude%20M%C3%B3vel!">
           <i className="fa fa-whatsapp"></i>
           </a>
       </Whatsapp>
+
+
+      <Slide>
+        <Carousel
+          arrows
+          infinite
+          slidesPerPage={2}
+        >
+          <a href={Haniot}><img src={Haniot} alt="teste" /></a>
+          <a href={Haniot2}><img src={Haniot2} alt="teste" /></a>
+          <a href={Haniot3}><img src={Haniot3} alt="teste" /></a>
+        </Carousel>
+      </Slide>
+
+
+      <Parceiros>
+        <img src={LogoNutes} alt="logo-nutes"/>
+        <img src={LogoCentelha} alt="logo-centelha"/>
+        <img src={LogoFapesq} alt="logo-fapesq"/>
+
+      </Parceiros>
 
       <Footer>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>

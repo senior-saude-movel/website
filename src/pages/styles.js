@@ -227,28 +227,81 @@ export const Inovation = styled.div`
 
 `
 
+export const Slide = styled.div`
+justify-content: center;
+display: flex;
+align-items: center;
 
-export const Services = styled.div`
+.BrainhubCarousel__arrows {
+  background-color: #20b3af;
+}
+
+img {
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+button {
+
+}
+
+`
+
+export const Parceiros = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+
+img {
+  width: 150px;
+}
+
+`
+
+
+
+
+export const ServicesTop = styled.div`
   flex: 1;
-  min-height: 60vh;
   flex-direction: column;
   align-items: center;
   display: flex;
   align-items: center;
 
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
     h1 {
       margin-top: 20px;
-      font-size: 20px;
       font-weight: bold;
+      font-size: 30px;
     }
 
     p {
       font-size: 15px;
+      font-size: 15px;
     }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    margin: 30px;
+
+    div {
+
+      p{
+        text-align: center;
+      }
+    }
+  }
+
+  `
   
 
 
-  section {
+  export const ServicesBottom =styled.div` 
     display: flex;
     flex-direction: row;
   div {
@@ -291,9 +344,6 @@ export const Services = styled.div`
     flex-direction: column;
     justify-content: stretch;
   }
-
-}
-
 `
 
 export const Footer = styled.div`
