@@ -29,6 +29,8 @@ export const Content = styled.section`
     width: 180px;
   }
 
+
+
   div {
     justify-content: center;
     align-items: center;
@@ -47,6 +49,26 @@ export const Content = styled.section`
       color: #165d72;
     }
 
+  }
+
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    justify-content: space-around;
+
+    img {
+      width: 150px;
+    }
+
+    div {
+
+      h1{
+        font-size: 20px;
+      }
+
+      p{
+        font-size: 15px;
+      }
+    }
   }
 
   `
@@ -253,7 +275,7 @@ justify-content: center;
 align-items: center;
 
 img {
-  width: 150px;
+  width: 130px;
 }
 
 `
@@ -342,7 +364,17 @@ div {
 
   @media screen and (min-width: 320px) and (max-width: 768px ) {
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
+    align-items: center;
+    div {
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 20px;
+
+      }
+    }
   }
 `
 
@@ -412,7 +444,7 @@ export const Copyright = styled.p`
     }
 
     img {
-      width: 120px;
+      width: 100px;
     }
   `
 

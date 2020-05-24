@@ -17,7 +17,7 @@ import Healthy from '../assets/healthy.svg';
  import Haniot from '../assets/haniot.jpeg';
  import Haniot2 from '../assets/haniot2.jpeg';
  import Haniot3 from '../assets/haniot3.jpeg';
- 
+
  import LogoNutes from '../assets/logo-nutes.jpg';
  import LogoFapesq from '../assets/logo-fapesq.jpg';
  import LogoCentelha from '../assets/logo-centelha.jpg';
@@ -35,7 +35,7 @@ import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 export default function Index() {
 
   return (
-    
+
     <>
       <GlobalStyle/>
       <Container>
@@ -112,7 +112,7 @@ export default function Index() {
           </a>
       </Whatsapp>
 
-
+{/* 
       <Slide>
         <Carousel
           arrows
@@ -123,7 +123,7 @@ export default function Index() {
           <a href={Haniot2}><img src={Haniot2} alt="teste" /></a>
           <a href={Haniot3}><img src={Haniot3} alt="teste" /></a>
         </Carousel>
-      </Slide>
+      </Slide> */}
 
 
       <Parceiros>
@@ -140,10 +140,10 @@ export default function Index() {
           <div>
           R Francisco Roberto, nº 108, Centenário, CEP: 58428-222
           </div>
-         
+
         </div>
 
-        
+
         <Copyright>
 
         <img src={LogoWhite} alt="logo" />
