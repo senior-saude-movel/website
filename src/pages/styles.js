@@ -129,6 +129,16 @@ transition: background-color 0.2s;
   background: ${shade(0.2, '#20b3af')};
 }
 
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 768px ) {
+    width: 350px;
+      p {
+        font-size: 15px;
+        margin: 20px;
+        text-align: center;
+      }
 }
   }`;
 
@@ -278,20 +288,29 @@ img {
   width: 130px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px ) {
+  display: flex;
+  justify-content: space-around;
+  img {
+  width: 100px;
+}
+}
+
 `
 
 
 
 
 export const ServicesTop = styled.div`
-  flex: 1;
   flex-direction: column;
   align-items: center;
   display: flex;
+  justify-content: center;
   align-items: center;
 
 
 div {
+  width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,11 +319,13 @@ div {
       margin-top: 20px;
       font-weight: bold;
       font-size: 30px;
+      color: #165d72;
     }
 
     p {
-      font-size: 15px;
-      font-size: 15px;
+      text-align: center;
+      font-size: 20px;
+      color: #165d72;
     }
   }
 
@@ -312,6 +333,8 @@ div {
     margin: 30px;
 
     div {
+
+      width: 400px;
 
       p{
         text-align: center;
@@ -324,6 +347,8 @@ div {
 
 
   export const ServicesBottom =styled.div` 
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
   div {
@@ -417,13 +442,26 @@ export const Footer = styled.div`
         justify-content: center;
         align-items: center;
       }
-
     }
 
     p {
-      font-size: 12px;
+      font-size: 15px;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    div {
+
+        p {
+          font-size: 12px;
+        }
+      }
+    
+  }
+
+
+
+  
   `
 
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, Slide, ServicesBottom, Whatsapp, Copyright } from './styles';
+import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, ServicesBottom, Whatsapp, Copyright } from './styles';
 
-import Carousel from '@brainhubeu/react-carousel';
+// import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 
@@ -14,9 +14,9 @@ import Healthy from '../assets/healthy.svg';
 // import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
 // import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
 
- import Haniot from '../assets/haniot.jpeg';
- import Haniot2 from '../assets/haniot2.jpeg';
- import Haniot3 from '../assets/haniot3.jpeg';
+//  import Haniot from '../assets/haniot.jpeg';
+//  import Haniot2 from '../assets/haniot2.jpeg';
+//  import Haniot3 from '../assets/haniot3.jpeg';
 
  import LogoNutes from '../assets/logo-nutes.jpg';
  import LogoFapesq from '../assets/logo-fapesq.jpg';
@@ -137,9 +137,9 @@ export default function Index() {
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
         <div>
 
-          <div>
+          <p>
           R Francisco Roberto, nº 108, Centenário, CEP: 58428-222
-          </div>
+          </p>
 
         </div>
 
