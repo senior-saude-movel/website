@@ -1,10 +1,8 @@
 import React from 'react';
 
-import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, ServicesBottom, Whatsapp, Copyright } from './styles';
+import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, ServicesBottom, Professionals, Tecnologias, Whatsapp, Copyright } from './styles';
 
-// import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-
+import Swiper from '../components/Swiper.js';
 
 import GlobalStyle  from '../styles/reset';
 import Logo from '../assets/logo.svg';
@@ -13,11 +11,6 @@ import LogoSenior from '../assets/senior.svg';
 import Healthy from '../assets/healthy.svg';
 // import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
 // import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
-
-//  import Haniot from '../assets/haniot.jpeg';
-//  import Haniot2 from '../assets/haniot2.jpeg';
-//  import Haniot3 from '../assets/haniot3.jpeg';
-
  import LogoNutes from '../assets/logo-nutes.jpg';
  import LogoFapesq from '../assets/logo-fapesq.jpg';
  import LogoCentelha from '../assets/logo-centelha.jpg';
@@ -29,7 +22,6 @@ import Idea from '../assets/idea.svg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
-
 
 
 export default function Index() {
@@ -92,7 +84,7 @@ export default function Index() {
           <p>O idoso é motivado à tornar-se corresponsável da sua evolução terapêutica. O paciente é um componente ativo do seu tratamento. </p>
         </div>
 
-        <div>
+          <div>
             <i className="fa fa-edit"></i>
             <h1>Autogerenciamento</h1>
             <p>A estratégia terapêutica é definida para o nível funcional de cada idoso. Considerando as particularidades de cada indivíduo.</p>
@@ -106,24 +98,23 @@ export default function Index() {
       </ServicesBottom>
 
 
+ 
+
+
+      {/* <Professionals> */}
+
+      <Tecnologias>
+        <Swiper />
+      </Tecnologias>
+
+
+
+
       <Whatsapp>
           <a href="https://api.whatsapp.com/send?phone=5583981124179&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Saude%20M%C3%B3vel!">
           <i className="fa fa-whatsapp"></i>
           </a>
       </Whatsapp>
-
-{/* 
-      <Slide>
-        <Carousel
-          arrows
-          infinite
-          slidesPerPage={2}
-        >
-          <a href={Haniot}><img src={Haniot} alt="teste" /></a>
-          <a href={Haniot2}><img src={Haniot2} alt="teste" /></a>
-          <a href={Haniot3}><img src={Haniot3} alt="teste" /></a>
-        </Carousel>
-      </Slide> */}
 
 
       <Parceiros>
@@ -134,11 +125,11 @@ export default function Index() {
       </Parceiros>
 
       <Footer>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+      
         <div>
 
           <p>
-          R Francisco Roberto, nº 108, Centenário, CEP: 58428-222
+          Rua Francisco Roberto, nº 108, Centenário, Campina Grande-PB. CEP: 58428-222.
           </p>
 
         </div>

@@ -20,6 +20,7 @@ export const Container = styled.header`
 
 export const Content = styled.section`
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 0 15px;
@@ -71,6 +72,42 @@ export const Content = styled.section`
     }
   }
 
+  `
+
+  
+
+  export const Tecnologias = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: #165d72;
+  min-height: 50vh;
+  border-radius: 14px;
+  margin: 50px;
+  flex: 1;
+
+  img {
+    margin:25px;
+
+    width: 600px;
+    border-radius: 10px;
+    border: solid 1px #165d72;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    img {
+      width: 340px;
+    }
+}
+  `
+
+  export const Slide = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  
   `
 
 export const Banner = styled.div`
@@ -194,6 +231,7 @@ export const About = styled.div`
 `
 
 
+
 export const Inovation = styled.div`
   background: url(${InovationBg});
   flex: 1;
@@ -259,25 +297,6 @@ export const Inovation = styled.div`
 
 `
 
-export const Slide = styled.div`
-justify-content: center;
-display: flex;
-align-items: center;
-
-.BrainhubCarousel__arrows {
-  background-color: #20b3af;
-}
-
-img {
-  width: 500px;
-  margin-bottom: 30px;
-}
-
-button {
-
-}
-
-`
 
 export const Parceiros = styled.div`
 display: flex;
@@ -297,8 +316,6 @@ img {
 }
 
 `
-
-
 
 
 export const ServicesTop = styled.div`
@@ -385,6 +402,7 @@ div {
  
   }
 
+
  
 
   @media screen and (min-width: 320px) and (max-width: 768px ) {
@@ -401,6 +419,17 @@ div {
       }
     }
   }
+`
+
+export const Professionals = styled.div`
+  flex: 1;
+  background-color: #165d72;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  min-height: 15vh;
 `
 
 export const Footer = styled.div`
