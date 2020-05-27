@@ -477,7 +477,7 @@ export const Professionals = styled.div`
 
   }
 
-  @media screen and (min-width: 320px) and (max-width: 768px ) {
+  @media screen and (min-width: 320px) and (max-width: 1024px ) {
     flex-direction: column;
 
     div {
