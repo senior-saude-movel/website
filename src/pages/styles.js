@@ -83,7 +83,7 @@ export const Content = styled.section`
   background-color: #165d72;
   min-height: 50vh;
   border-radius: 14px;
-  margin: 50px;
+  margin: 30px;
   flex: 1;
 
   img {
@@ -423,13 +423,86 @@ div {
 
 export const Professionals = styled.div`
   flex: 1;
-  background-color: #165d72;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
   min-height: 15vh;
+
+  div {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    flex: 1;
+    border-radius: 15px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 400px;
+    height: 300px;
+
+
+    section {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+      border: 1px solid #fff;
+      justify-content: center;
+      margin: 15px;
+      width: 230px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+      h1 {
+
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+
+    p {
+        margin: 10px;
+        color: #fff;
+        text-align: justify;
+        font-size: 16px;
+        width: 400px;
+      }
+
+
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    flex-direction: column;
+
+    div {
+
+      flex-direction: column;
+      margin: 30px;
+      width: 450px;
+
+      section {
+
+        img {
+      justify-content: center;
+      margin: 20px;
+      border-radius: 10px;
+    }
+      }
+
+      p {
+        width: 350px;
+        font-size: 15px;
+      }
+
+    }
+
+  }
 `
 
 export const Footer = styled.div`

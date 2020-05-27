@@ -9,8 +9,8 @@ import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logo-white.svg';
 import LogoSenior from '../assets/senior.svg';
 import Healthy from '../assets/healthy.svg';
-// import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
-// import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
+import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
+import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
  import LogoNutes from '../assets/logo-nutes.jpg';
  import LogoFapesq from '../assets/logo-fapesq.jpg';
  import LogoCentelha from '../assets/logo-centelha.jpg';
@@ -98,10 +98,26 @@ export default function Index() {
       </ServicesBottom>
 
 
- 
 
+      <Professionals>
+        <div>
+          <section>
+            <img src={ProfessionalMarcela} alt="Marcela_Pinheiro"/>
+            <h1>Marcela Pimentel</h1>
+          </section> 
+          
+          <p>Mestranda em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB). Pós-graduanda em Fisioterapia Neurofuncional Adulto e Infantil pela Faculdades Integradas de Patos (FIP). Atualmente, é professora universitária na área de neurologia e pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES) desenvolvendo projetos voltados ao monitoramento remoto de idosos com uso da tecnologia. É membro do Laboratório de Neurociências e Comportamento Aplicadas (LANEC/UEPB). Possui ampla experiência no tratamento das doenças crônico-neurodegenerativas comuns do envelhecimento.</p>
+        </div>
 
-      {/* <Professionals> */}
+        <div>
+          <section>
+            <img src={ProfessionalEujessika} alt="Eujessika_Rodrigues"/>
+            <h1>Eujsessica Rodrigues:</h1>
+          </section> 
+          
+          <p>Doutoranda pela Universidade Federal do Rio Grande do Norte (UFRN) atuando na linha de pesquisa: avaliação e intervenção no processo de envelhecimento. Mestre em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB). Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes. Bacharelado em Fisioterapia pela Universidade Estadual da Paraíba. Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES/UEPB) e atua como membro do Grupo de Estudo em Fisioterapia Geriátrica e Epidemiologia da UFRN, desenvolvendo projetos baseados em tecnologia para monitoramento remoto de idosos.</p>
+        </div>
+      </Professionals>
 
       <Tecnologias>
         <Swiper />

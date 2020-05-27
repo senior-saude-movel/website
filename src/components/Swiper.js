@@ -9,7 +9,7 @@ import Haniot4 from '../assets/heart-rate.png';
 import Haniot5 from '../assets/sleep.png';
 import Haniot6 from '../assets/steps.png';
 
-import AppHaniot1 from '../assets/01_login.png';
+import AppHaniot1 from '../assets/teste.jpeg';
  
 const SimpleSwiperWithParams = () => {
   const params = {
@@ -66,6 +66,9 @@ const SimpleSwiperWithParams = () => {
           </div>
           <div>
           <img src={Haniot6}  alt="ss"/>
+          </div>
+          <div>
+          <img src={AppHaniot1}  alt="ss"/>
           </div>
           {/* <div>
           <img src={AppHaniot1}  alt="ss"/>
