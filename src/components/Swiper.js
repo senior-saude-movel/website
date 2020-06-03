@@ -2,14 +2,13 @@ import React from 'react';
 import Swiper from 'react-id-swiper';
 
 
-import Haniot1 from '../assets/active-minutes.png';
-import Haniot2 from '../assets/calories.png';
-import Haniot3 from '../assets/dashboard-patient.png';
-import Haniot4 from '../assets/heart-rate.png';
-import Haniot5 from '../assets/sleep.png';
-import Haniot6 from '../assets/steps.png';
+import Haniot1 from '../assets/haniot.jpeg';
+import Haniot2 from '../assets/haniot2.jpeg';
+import Haniot3 from '../assets/haniot3.jpeg';
 
-import AppHaniot1 from '../assets/teste.jpeg';
+import HaniotApp1 from '../assets/haniotApp1.jpg';
+import HaniotApp2 from '../assets/haniotApp2.jpg';
+import HaniotApp3 from '../assets/haniotApp3.jpg';
  
 const SimpleSwiperWithParams = () => {
   const params = {
@@ -53,26 +52,20 @@ const SimpleSwiperWithParams = () => {
             <img src={Haniot1}  alt="ss"/>
           </div>
           <div>
-          <img src={Haniot2}  alt="ss"/>
+            <img src={Haniot2}  alt="ss"/>
           </div>
           <div>
-          <img src={Haniot3}  alt="ss"/>
+            <img src={Haniot3}  alt="ss"/>
           </div>
           <div>
-          <img src={Haniot4} alt="ss"/>
+            <img src={HaniotApp1}  alt="ss"/>
           </div>
           <div>
-          <img src={Haniot5}  alt="ss"/>
+            <img src={HaniotApp2}  alt="ss"/>
           </div>
           <div>
-          <img src={Haniot6}  alt="ss"/>
+            <img src={HaniotApp3}  alt="ss"/>
           </div>
-          <div>
-          <img src={AppHaniot1}  alt="ss"/>
-          </div>
-          {/* <div>
-          <img src={AppHaniot1}  alt="ss"/>
-          </div> */}
     </Swiper>
     
   )

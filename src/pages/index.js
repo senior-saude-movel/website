@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, ServicesBottom, Professionals, Tecnologias, Whatsapp, Copyright } from './styles';
 
 import Swiper from '../components/Swiper.js';
@@ -112,7 +111,7 @@ export default function Index() {
         <div>
           <section>
             <img src={ProfessionalEujessika} alt="Eujessika_Rodrigues"/>
-            <h1>Eujsessica Rodrigues:</h1>
+            <h1>Eujessika Rodrigues:</h1>
           </section> 
           
           <p>Doutoranda pela Universidade Federal do Rio Grande do Norte (UFRN) atuando na linha de pesquisa: avaliação e intervenção no processo de envelhecimento. Mestre em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB). Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes. Bacharelado em Fisioterapia pela Universidade Estadual da Paraíba. Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES/UEPB) e atua como membro do Grupo de Estudo em Fisioterapia Geriátrica e Epidemiologia da UFRN, desenvolvendo projetos baseados em tecnologia para monitoramento remoto de idosos.</p>
@@ -137,6 +136,7 @@ export default function Index() {
         <img src={LogoNutes} alt="logo-nutes"/>
         <img src={LogoCentelha} alt="logo-centelha"/>
         <img src={LogoFapesq} alt="logo-fapesq"/>
+
 
       </Parceiros>
 
