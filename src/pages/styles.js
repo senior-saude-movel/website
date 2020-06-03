@@ -74,6 +74,39 @@ export const Content = styled.section`
 
   `
 
+  export const TextoTecnologia = styled.div`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    min-height: 20vh;
+    flex: 1;
+
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #165d72;
+    }
+
+    p {
+      color: #165d72;
+      font-size: 20px;
+      margin-top: 5px;
+      justify-content: center;
+      align-items: center;
+      width: 700px;
+      text-align: center;
+      display: flex;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 768px ) {
+      p {
+        width: 400px;
+      }
+    }
+  `
+
   
 
   export const Tecnologias = styled.div`
@@ -85,6 +118,12 @@ export const Content = styled.section`
   border-radius: 14px;
   margin: 30px;
   flex: 1;
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
 
   img {
     margin:25px;
@@ -107,6 +146,10 @@ export const Content = styled.section`
   flex: 1;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    font-size: 30px;
+  }
   
   `
 
@@ -421,6 +464,16 @@ div {
   }
 `
 
+export const ProfessionalsTitle = styled.h1`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #165d72;
+    margin-bottom: 20px;
+`
+
 export const Professionals = styled.div`
   flex: 1;
   display: flex;
@@ -428,6 +481,7 @@ export const Professionals = styled.div`
   align-items: center;
   color: #fff;
   min-height: 15vh;
+
 
   div {
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);

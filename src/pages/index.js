@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, ServicesBottom, Professionals, Tecnologias, Whatsapp, Copyright } from './styles';
+import { Container, Content, Banner, About, Inovation, Footer, Parceiros, ServicesTop, ServicesBottom, ProfessionalsTitle, Professionals, TextoTecnologia, Tecnologias, Whatsapp, Copyright } from './styles';
 
 import Swiper from '../components/Swiper.js';
 
@@ -7,7 +7,7 @@ import GlobalStyle  from '../styles/reset';
 import Logo from '../assets/logo.svg';
 import LogoWhite from '../assets/logo-white.svg';
 import LogoSenior from '../assets/senior.svg';
-import Healthy from '../assets/healthy.svg';
+import Healthy from '../assets/healthy.jpeg';
 import ProfessionalMarcela from '../assets/professional-marcela.jpeg';
 import ProfessionalEujessika from '../assets/professional-eujessika.jpg';
  import LogoNutes from '../assets/logo-nutes.jpg';
@@ -97,7 +97,9 @@ export default function Index() {
       </ServicesBottom>
 
 
-
+      <ProfessionalsTitle>
+        <h1>Profissionais</h1>
+      </ProfessionalsTitle>
       <Professionals>
         <div>
           <section>
@@ -111,17 +113,21 @@ export default function Index() {
         <div>
           <section>
             <img src={ProfessionalEujessika} alt="Eujessika_Rodrigues"/>
-            <h1>Eujessika Rodrigues:</h1>
+            <h1>Eujessika Rodrigues</h1>
           </section> 
           
           <p>Doutoranda pela Universidade Federal do Rio Grande do Norte (UFRN) atuando na linha de pesquisa: avaliação e intervenção no processo de envelhecimento. Mestre em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB). Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes. Bacharelado em Fisioterapia pela Universidade Estadual da Paraíba. Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES/UEPB) e atua como membro do Grupo de Estudo em Fisioterapia Geriátrica e Epidemiologia da UFRN, desenvolvendo projetos baseados em tecnologia para monitoramento remoto de idosos.</p>
         </div>
       </Professionals>
 
+      <TextoTecnologia>
+          <h1>Tecnologias</h1>
+          <p>A Sênior Saúde Móvel dispõe de tecnologias para acompanhamento remoto que vão além das seções de fisioterapia. O paciente é motivado a buscar hábitos de vida mais saudáveis com nossas aplicações e nossa equipe presta assistência em tempo real. </p>
+      </TextoTecnologia> 
+
       <Tecnologias>
         <Swiper />
       </Tecnologias>
-
 
 
 
