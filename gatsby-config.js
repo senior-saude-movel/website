@@ -50,11 +50,11 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Roboto Mono`,
+            family: `Work Sans`,
             variants: [`400`, `700`]
           },
           {
-            family: `Roboto`,
+            family: `Sans-serif`,
             subsets: [`latin`]
           },
         ],
