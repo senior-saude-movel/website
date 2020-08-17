@@ -122,7 +122,7 @@ export default function Index() {
 
       <TextoTecnologia>
           <h1>Tecnologias</h1>
-          <p>A Sênior Saúde Móvel dispõe de tecnologias para acompanhamento remoto que vão além das seções de fisioterapia. O paciente é motivado a buscar hábitos de vida mais saudáveis com nossas aplicações e nossa equipe presta assistência em tempo real. </p>
+          <p>A Sênior Saúde Móvel dispõe de tecnologias para acompanhamento remoto que vão além das sessões de fisioterapia. O paciente é motivado a buscar hábitos de vida mais saudáveis com nossas aplicações e nossa equipe presta assistência em tempo real. </p>
       </TextoTecnologia> 
 
       <Tecnologias>
