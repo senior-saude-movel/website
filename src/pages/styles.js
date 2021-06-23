@@ -1,26 +1,22 @@
-import styled from 'styled-components';
-import MedicalImg from '../assets/medical.svg'
+import styled from "styled-components"
+import MedicalImg from "../assets/medical.svg"
 
-import { shade } from 'polished';
-import InovationBg from '../assets/inovation.svg';
+import { shade } from "polished"
+import InovationBg from "../assets/inovation.svg"
 
-// export const Container = styled.div`
-//   color: ${props => props.theme.primary};
-// `;
-
-export const Container = styled.header`
+export const Header = styled.header`
   width: 100%;
-  height: 80px;
   background: #FFF;
   flex: 1;
-  fill: solid;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   position: fixed;
-`;
+  z-index: 1000;
+`
 
 export const Content = styled.section`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   padding: 0 15px;
@@ -30,86 +26,76 @@ export const Content = styled.section`
     width: 180px;
   }
 
+  h1, h2, h3 {
+    font-weight: bold;
+    color: #165d72;
+    margin: 5px;
+    text-align: center;
+  }
 
+  h1 {
+    font-size: 28px;
+  }
 
-  div {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    h1 {
-      font-size: 30px;
-      font-weight: bold;
-      color: #165d72;
-      margin: 5px;
-    }
+  h2 {
+    font-size: 18px;
+  }
 
-    p {
-      font-size: 15px;
-      font-weight: lighter;
-      color: #165d72;
-    }
-
+  h3 {
+    font-size: 14px;
   }
 
 
-  @media screen and (min-width: 320px) and (max-width: 768px ) {
-    justify-content: space-around;
+  @media screen and (max-width: 600px ) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 
     img {
       width: 150px;
     }
-
-    div {
-
-      h1{
-        font-size: 20px;
-      }
-
-      p{
-        font-size: 15px;
-      }
-    }
   }
 
-  `
+`
 
-  export const TextoTecnologia = styled.div`
-    flex: 1;
+export const TextTechnology = styled.div`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 20vh;
+  margin-top: 40px;
+
+  h1 {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #165d72;
+  }
+
+  p {
+    color: #165d72;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 700px;
+    text-align: center;
     display: flex;
-    min-height: 20vh;
-    flex: 1;
+  }
 
-    h1 {
-      font-size: 30px;
-      font-weight: bold;
-      color: #165d72;
-    }
-
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
     p {
-      color: #165d72;
-      font-size: 20px;
-      margin-top: 5px;
-      justify-content: center;
-      align-items: center;
-      width: 700px;
-      text-align: center;
-      display: flex;
+      width: 400px;
     }
+  }
+`
 
-    @media screen and (min-width: 320px) and (max-width: 768px ) {
-      p {
-        width: 400px;
-      }
-    }
-  `
-
-  
-
-  export const Tecnologias = styled.div`
+export const Technologies = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -117,7 +103,6 @@ export const Content = styled.section`
   min-height: 50vh;
   border-radius: 14px;
   margin: 30px;
-  flex: 1;
 
   h1 {
     font-size: 30px;
@@ -126,21 +111,19 @@ export const Content = styled.section`
   }
 
   img {
-    margin:25px;
-
+    margin: 25px;
     width: 600px;
-    border-radius: 10px;
-    border: solid 1px #165d72;
+    border-radius: 10px
   }
 
   @media screen and (min-width: 320px) and (max-width: 768px ) {
     img {
       width: 340px;
     }
-}
-  `
+  }
+`
 
-  export const Slide = styled.div`
+export const Slide = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -150,8 +133,7 @@ export const Content = styled.section`
   h1 {
     font-size: 30px;
   }
-  
-  `
+`
 
 export const Banner = styled.div`
   background: url(${MedicalImg}) no-repeat center;
@@ -161,67 +143,85 @@ export const Banner = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  min-height: 130vh;
+  color: #20b3af;
+  min-height: 100vh;
   background-attachment: fixed;
+
   img {
+    padding: 20px;
     width: 300px;
   }
 
-  div {
-
-    background-color: #fff;
-    display: flex;
-    border-radius: 15px;
-    flex-direction: column;
-    width: 500px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-
-
+  @media screen and (max-width: 768px ) {
     img {
-    width: 300px;
+      width: 200px;
     }
+  }
+`
 
+export const RotatePerspectiveOne = styled.img`
+  transform: perspective(400px) rotateY(40deg);
+`
+
+export const RotatePerspectiveTwo = styled.img`
+  transform: perspective(400px) rotateY(-40deg);
+`
+
+export const BannerContent = styled.div`
+  background-color: #ffffff80;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+
+  img {
+    width: 150px;
+    margin: 10px;
+    margin-top: -100px;
+    margin-bottom: 0;
+  }
 
   p {
+    padding: 5px;
     font-size: 16px;
     color: #20b3af;
     font-weight: bold;
   }
 
-button {
-align-items: center;
-justify-content: center;
-height: 40px;
-width: 150px;
-background: #20b3af;
-margin: 0 auto;
-margin-top: 30px;
-font-size: 14px;
-color: #fff;
-border-radius: 16px;
-border: 0;
-transition: background-color 0.2s;
+  i {
+    font-size: 24px;
+  }
 
-&:hover {
-  background: ${shade(0.2, '#20b3af')};
-}
+  div {
+    padding: 5px;
+  }
 
+  @media screen and (max-width: 450px ) {
+    img {
+      display: none;
+    }
 
+  }
 
-}
-@media screen and (min-width: 320px) and (max-width: 768px ) {
-    width: 350px;
-      p {
-        font-size: 15px;
-        margin: 20px;
-        text-align: center;
-      }
-}
-  }`;
+  @media screen and (min-width: 450px ) and (max-width: 768px ) {
+    img {
+      width: 100px;
+      margin: 0;
+      margin-top: -100px;
+    }
 
+  }
+
+  @media screen and (min-width: 1366px ) {
+    img {
+      width: 250px;
+    }
+
+  }
+
+`
 
 export const About = styled.div`
   flex: 1;
@@ -231,10 +231,9 @@ export const About = styled.div`
   justify-content: center;
   align-items: center;
   color: #fff;
-  min-height: 60vh;
+  min-height: 45vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   border-spacing: 15px;
-
 
   img {
     height: 300px;
@@ -245,7 +244,8 @@ export const About = styled.div`
     display: flex;
     flex-direction: column;
     margin: 30px;
-    h1 { 
+
+    h1 {
       font-weight: bold;
       font-size: 30px;
       color: #000;
@@ -256,27 +256,24 @@ export const About = styled.div`
       margin-top: 20px;
       flex: 1;
       text-align: justify;
-
       color: #000;
-
-
+      font-weight: bold;
     }
 
-    
 
   }
 
-  @media screen and (min-width: 320px) and (max-width: 768px ) {
+  @media screen  and (max-width: 768px ) {
     flex-direction: column;
-
   }
 
 `
 
-
-
-export const Inovation = styled.div`
+export const Innovation = styled.div`
   background: url(${InovationBg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex: 1;
   background-color: #fff;
   display: flex;
@@ -287,7 +284,6 @@ export const Inovation = styled.div`
   min-height: 60vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   border-spacing: 15px;
-
 
   img {
     height: 50px;
@@ -301,8 +297,9 @@ export const Inovation = styled.div`
     display: flex;
     flex-direction: column;
     margin: 30px;
-    h1 { 
-      text-align: center; 
+
+    h1 {
+      text-align: center;
       font-weight: bold;
       font-size: 30px;
       color: #000;
@@ -318,74 +315,87 @@ export const Inovation = styled.div`
       line-height: 150%;
       width: 600px;
       color: #000;
-
-
+      font-weight: bold;
     }
 
   }
 
 
-
-
-  @media screen and (min-width: 320px) and (max-width: 768px ) {
-
+  @media screen and (max-width: 768px ) {
     div {
       p {
         font-size: 20px;
         width: 296px;
       }
     }
+  }
+`
 
+export const Partners = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+export const PartnersContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    padding: 10px 10px;
+
+    img {
+      width: 130px;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 100px;
+    }
   }
 
 `
 
-
-export const Parceiros = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-
-img {
-  width: 130px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px ) {
-  display: flex;
-  justify-content: space-around;
-  img {
-  width: 100px;
-}
-}
-
+export const PartnersHeader = styled.h1`
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #165d72;
 `
-
 
 export const ServicesTop = styled.div`
   flex-direction: column;
   align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 40px;
 
+  div {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
-div {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
     h1 {
       margin-top: 20px;
       font-weight: bold;
       font-size: 30px;
       color: #165d72;
+      padding: 10px;
     }
 
     p {
       text-align: center;
       font-size: 20px;
       color: #165d72;
+      font-weight: bold;
     }
   }
 
@@ -393,31 +403,35 @@ div {
     margin: 30px;
 
     div {
-
       width: 400px;
 
-      p{
+      p {
         text-align: center;
       }
     }
   }
 
-  `
-  
+`
 
+export const ServicesBottom = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-  export const ServicesBottom =styled.div` 
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
   div {
-    margin: 50px;
-    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
+    max-width: 350px;
+    border: 1px dashed;
+    border-color: #20b3af;
+    border-radius: 10px;
 
     i {
       color: #165d72;
@@ -429,24 +443,17 @@ div {
       font-weight: bold;
       color: #165d72;
       font-size: 25px;
+      padding: 10px;
     }
 
     p {
       margin: 10px;
       color: #165d72;
-      text-align: center;
+      text-align: justify;
     }
 
-
-    &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.6s;
-    }
- 
   }
 
-
- 
 
   @media screen and (min-width: 320px) and (max-width: 768px ) {
     flex-direction: column;
@@ -456,6 +463,7 @@ div {
       h1 {
         font-size: 20px;
       }
+
       p {
         font-size: 20px;
 
@@ -465,13 +473,14 @@ div {
 `
 
 export const ProfessionalsTitle = styled.h1`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #165d72;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #165d72;
+  margin-bottom: 20px;
+  margin-top: 40px;
 `
 
 export const Professionals = styled.div`
@@ -491,11 +500,8 @@ export const Professionals = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 400px;
-    height: 300px;
-
 
     section {
       flex-direction: column;
@@ -504,13 +510,12 @@ export const Professionals = styled.div`
       justify-content: center;
 
       img {
-      border: 1px solid #fff;
-      justify-content: center;
-      margin: 15px;
-      width: 230px;
-      height: 200px;
-      border-radius: 10px;
-    }
+        border: 1px solid #fff;
+        justify-content: center;
+        margin: 15px;
+        width: 230px;
+        border-radius: 10px;
+      }
 
       h1 {
 
@@ -521,13 +526,12 @@ export const Professionals = styled.div`
     }
 
     p {
-        margin: 10px;
-        color: #fff;
-        text-align: justify;
-        font-size: 16px;
-        width: 400px;
-      }
-
+      margin: 10px;
+      color: #fff;
+      text-align: justify;
+      font-size: 16px;
+      font-weight: bold;
+    }
 
   }
 
@@ -543,10 +547,10 @@ export const Professionals = styled.div`
       section {
 
         img {
-      justify-content: center;
-      margin: 20px;
-      border-radius: 10px;
-    }
+          justify-content: center;
+          margin: 20px;
+          border-radius: 10px;
+        }
       }
 
       p {
@@ -560,7 +564,6 @@ export const Professionals = styled.div`
 `
 
 export const Footer = styled.div`
-  flex: 1;
   background-color: #165d72;
   display: flex;
   flex-direction: column;
@@ -569,101 +572,203 @@ export const Footer = styled.div`
   color: #fff;
   min-height: 15vh;
 
-  div {
-    margin: 0 auto;
-    flex: 1;
-    background-color: #165d72;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-size: cover;
-    img {
-      display: flex;
-      height: 50px;
-      justify-content: center;
-      align-items: center;
-      color: white;
-    }
-
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        height: 20px;
-        color: white;
-        display: flex;
-        margin-left: 10px;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-    p {
-      font-size: 15px;
-    }
-  }
-
   @media screen and (min-width: 320px) and (max-width: 768px ) {
     div {
 
-        p {
-          font-size: 12px;
-        }
+      p {
+        font-size: 12px;
       }
-    
+    }
+
+  }
+`
+
+export const Copyright = styled.div`
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-size: cover;
+  background-color: #165d72;
+
+  p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+`
+
+export const Whatsapp = styled.div`
+  a {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #20b3af;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
   }
 
+  i {
+    margin-top: 16px
+  }
 
+`
 
-  
-  `
+export const MaxWidth = styled.div`
+  max-width: 1366px;
+  margin: auto;
+`
 
+export const Address = styled.div`
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-export const Copyright = styled.p`
-    font-size: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    flex: 1;
-    background-color: #165d72;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-size: cover;
-    font-weight: 200;
+  p {
+    font-weight: bold;
+    font-size: 12px;
+  }
+`
 
-    p{
+export const AddressMap = styled.div`
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2%;
+  background-color: white;
+  border: 1px solid white;
+  overflow: hidden;
+`
 
-    }
+export const SocialNetworks = styled.div`
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2%;
 
+  p {
+    font-weight: bold;
+  }
+`
+
+export const SocialNetworksItem = styled.a`
+  margin: 5px;
+  width: 24px;
+  height: 24px;
+`
+
+export const SocialNetworksHeader = styled.h1`
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+`
+
+export const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`
+export const FlexColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+export const BadgesApp = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+
+  h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+  }
+`
+
+export const BadgesAppItem = styled.a`
+  img {
+    width: 150px;
+  }
+`
+
+export const NotFoundContent = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+  img {
+    width: 360px;
+  }
+
+  h1 {
+    padding: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+
+  h2 {
+    padding: 5px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+
+  p {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px ) {
     img {
-      width: 100px;
-    }
-  `
-
-  export const Whatsapp = styled.div`
-      a {
-      position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#20b3af;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    box-shadow: 1px 1px 2px #888;
-    z-index:1000;
+      margin-top: 50px;
+      width: 300px;
     }
 
-    i {
-      margin-top:16px
-    }
+  }
+`
 
-  `
+export const PrimaryButton = styled.button`
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 150px;
+  background: #20b3af;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
 
- 
-
-
+  &:hover {
+    background: ${shade(0.2, "#20b3af")};
+    cursor: pointer;
+  }
+`

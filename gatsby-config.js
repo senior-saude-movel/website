@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const siteMetadata = require('./config/metadata');
+const siteMetadata = require("./config/metadata")
 
 module.exports = {
   siteMetadata,
@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -22,7 +23,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#20b3af`,
         display: `standalone`,
-        icon: `src/assets/icon.png` // 512x512
+        icon: `src/assets/favicon-32x32.png`, // 512x512
       },
     },
     {
@@ -40,30 +41,25 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        displayName: process.env.NODE_ENV !== 'production',
+        displayName: process.env.NODE_ENV !== "production",
       },
     },
-
-    {
-
-    resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Work Sans`,
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Sans-serif`,
-            subsets: [`latin`]
-          },
-        ],
-      }
-
-    }
-      
-      
-      ,
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Work Sans`,
+    //         variants: [`400`, `700`],
+    //       },
+    //       {
+    //         family: `Sans-serif`,
+    //         subsets: [`latin`],
+    //       },
+    //     ],
+    //   },
+    //
+    // },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
@@ -71,6 +67,15 @@ module.exports = {
         ignore: [`**/styles.js`],
       },
     },
-    `gatsby-plugin-offline`,
-  ]
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto`,
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+  ],
 }
