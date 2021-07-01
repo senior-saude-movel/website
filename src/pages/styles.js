@@ -102,7 +102,7 @@ export const Technologies = styled.div`
   background-color: #165d72;
   min-height: 50vh;
   border-radius: 14px;
-  margin: 30px;
+  margin: 10px;
 
   h1 {
     font-size: 30px;
@@ -156,6 +156,16 @@ export const Banner = styled.div`
     img {
       width: 200px;
     }
+  }
+`
+
+export const BannerPrimaryImage = styled.div`
+  padding: 20px;
+  width: 300px;
+
+  @media screen and (max-width: 768px ) {
+    margin-top: 150px;
+    width: 200px;
   }
 `
 
@@ -340,6 +350,7 @@ export const Partners = styled.div`
 
 export const PartnersContent = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -542,8 +553,7 @@ export const Professionals = styled.div`
 
       flex-direction: column;
       margin: 30px;
-      width: 450px;
-
+      
       section {
 
         img {
@@ -622,7 +632,7 @@ export const Whatsapp = styled.div`
 `
 
 export const MaxWidth = styled.div`
-  max-width: 1366px;
+  max-width: 1500px;
   margin: auto;
 `
 
@@ -693,6 +703,7 @@ export const BadgesApp = styled.div`
     color: white;
     font-weight: bold;
     font-size: 24px;
+    text-align: center;
   }
 `
 

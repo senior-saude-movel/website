@@ -10,7 +10,7 @@ import {
   BadgesApp,
   BadgesAppItem,
   Banner,
-  BannerContent,
+  BannerContent, BannerPrimaryImage,
   Content,
   Copyright,
   FlexColumn,
@@ -69,7 +69,9 @@ export default function Index() {
 
     <Banner>
 
-      <img src={LogoWhite} alt="Sênior Saúde Móvel" />
+      <BannerPrimaryImage>
+        <img src={LogoWhite} alt="Sênior Saúde Móvel" />
+      </BannerPrimaryImage>
 
       <BannerContent>
         <FlexRow>
@@ -145,15 +147,17 @@ export default function Index() {
       </MaxWidth>
     </Innovation>
 
-    <ServicesTop id="section_services">
-      <MaxWidth>
-        <h1 id="services">Serviços</h1>
-        <p>
-          A Sênior Saúde Móvel realiza atendimentos em fisioterapia em gerontologia e fisioterapia neurofuncional
-          para idosos fundamentado em evidências.Os tratamentos realizados baseiam-se nos seguintes pilares:
-        </p>
-      </MaxWidth>
-    </ServicesTop>
+    <MaxWidth>
+      <ServicesTop id="section_services">
+        <div>
+          <h1 id="services">Serviços</h1>
+          <p>
+            A Sênior Saúde Móvel realiza atendimentos em fisioterapia em gerontologia e fisioterapia neurofuncional
+            para idosos fundamentado em evidências.Os tratamentos realizados baseiam-se nos seguintes pilares:
+          </p>
+        </div>
+      </ServicesTop>
+    </MaxWidth>
 
     <MaxWidth>
 
@@ -230,9 +234,11 @@ export default function Index() {
 
     </MaxWidth>
 
-    <Technologies>
-      <Swiper />
-    </Technologies>
+    <MaxWidth>
+      <Technologies>
+        <Swiper />
+      </Technologies>
+    </MaxWidth>
 
     <Whatsapp>
       <a
