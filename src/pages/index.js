@@ -94,7 +94,7 @@ export default function Index() {
       </BannerContent>
 
       <BadgesApp>
-        <h1>Disponivéis para as plataformas Android e IOS.</h1>
+        <h1>Em breve disponível para as plataformas Android e IOS.</h1>
         <FlexRow>
           <div>
             <BadgesAppItem

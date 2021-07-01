@@ -162,7 +162,8 @@ export const Banner = styled.div`
 export const BannerPrimaryImage = styled.div`
   padding: 20px;
   width: 300px;
-
+  margin-top: 50px;
+  
   @media screen and (max-width: 768px ) {
     margin-top: 150px;
     width: 200px;

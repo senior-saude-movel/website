@@ -1,6 +1,6 @@
 import React from "react"
 import Swiper from "react-id-swiper"
-
+import 'swiper/css/swiper.css'
 import { SwiperItem } from "./styles"
 import AppLogin from "../assets/app/login.png"
 import AppDashboard from "../assets/app/dashboard.png"
@@ -34,7 +34,7 @@ const SimpleSwiperWithParams = () => {
     autoplay: true,
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 0,
     pagination: {
       el: ".swiper-pagination",
