@@ -259,7 +259,7 @@ export const About = styled.div`
     h1 {
       font-weight: bold;
       font-size: 30px;
-      color: #000;
+      color: #165d72;
       flex: 1;
     }
 
@@ -267,7 +267,7 @@ export const About = styled.div`
       margin-top: 20px;
       flex: 1;
       text-align: justify;
-      color: #000;
+      color: #165d72;
       font-weight: bold;
     }
 
@@ -313,7 +313,7 @@ export const Innovation = styled.div`
       text-align: center;
       font-weight: bold;
       font-size: 30px;
-      color: #000;
+      color: #165d72;
       flex: 1;
       margin: 30px;
     }
@@ -325,7 +325,7 @@ export const Innovation = styled.div`
       text-align: justify;
       line-height: 150%;
       width: 600px;
-      color: #000;
+      color: #165d72;
       font-weight: bold;
     }
 
