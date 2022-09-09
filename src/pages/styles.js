@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import MedicalImg from "../assets/medical.svg"
+import styled from 'styled-components'
+import MedicalImg from '../assets/medical.svg'
 
-import { shade } from "polished"
-import InovationBg from "../assets/inovation.svg"
+import { shade } from 'polished'
+import InovationBg from '../assets/inovation.svg'
 
 export const Header = styled.header`
   width: 100%;
@@ -163,7 +163,7 @@ export const BannerPrimaryImage = styled.div`
   padding: 20px;
   width: 300px;
   margin-top: 50px;
-  
+
   @media screen and (max-width: 768px ) {
     margin-top: 150px;
     width: 200px;
@@ -241,6 +241,7 @@ export const About = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   color: #fff;
   min-height: 45vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
@@ -255,6 +256,7 @@ export const About = styled.div`
     display: flex;
     flex-direction: column;
     margin: 30px;
+    min-width: 360px;
 
     h1 {
       font-weight: bold;
@@ -272,6 +274,17 @@ export const About = styled.div`
     }
 
 
+  }
+
+  iframe {
+    margin: 0 50px 50px 50px;
+    width: 560px;
+    height: 315px;
+
+    @media screen  and (max-width: 768px ) {
+      width: 80%;
+      height: 360px;
+    }
   }
 
   @media screen  and (max-width: 768px ) {
@@ -554,7 +567,7 @@ export const Professionals = styled.div`
 
       flex-direction: column;
       margin: 30px;
-      
+
       section {
 
         img {
@@ -780,7 +793,7 @@ export const PrimaryButton = styled.button`
   text-transform: uppercase;
 
   &:hover {
-    background: ${shade(0.2, "#20b3af")};
+    background: ${shade(0.2, '#20b3af')};
     cursor: pointer;
   }
 `
