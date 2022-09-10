@@ -10,19 +10,23 @@ import {
   BadgesApp,
   BadgesAppItem,
   Banner,
-  BannerContent, BannerPrimaryImage,
+  BannerContent,
+  BannerPrimaryImage,
   Content,
   Copyright,
   FlexColumn,
-  FlexRow,
+  FlexRow, FlexRowSpaceBetween,
   Footer,
   Header,
   Innovation,
   MaxWidth,
   Partners,
   PartnersContent,
-  PartnersHeader, PrimaryButton,
+  PartnersHeader,
+  PrimaryButton,
   Professionals,
+  ProfessionalsItem,
+  ProfessionalsName,
   ProfessionalsTitle,
   RotatePerspectiveOne,
   RotatePerspectiveTwo,
@@ -35,6 +39,7 @@ import {
   TextTechnology,
   Whatsapp,
 } from "./styles"
+import "../style.css"
 import Swiper from "../components/Swiper.js"
 import GlobalStyle from "../styles/reset"
 import Logo from "../assets/logo.svg"
@@ -55,6 +60,7 @@ import AppStore from "../assets/app.store.svg"
 export default function Index() {
 
   return <React.Fragment>
+
     <GlobalStyle />
 
     <Header>
@@ -137,7 +143,8 @@ export default function Index() {
         <FontAwesomeIcon icon={faCheckSquare} />
         <img src={Idea} alt="ideia" />
         <h1 id="innovation">Inovação</h1>
-        <p>Após profunda dedicação em estudos nessa área, a Sênior Saúde Móvel implementou uma estratégia tecnológica
+        <p>
+          Após profunda dedicação em estudos nessa área, a Sênior Saúde Móvel implementou uma estratégia tecnológica
           aos atendimentos fisioterapêuticos. Desenvolvemos um sistema de monitoramento remoto de idosos, que capta
           informações do paciente 24h por dia fazendo uso avançado de todo o potencial de relógios e pulseiras
           inteligentes. Esse serviço auxilia na avaliação continuada, oferecendo dados cruciais para predição de
@@ -153,7 +160,7 @@ export default function Index() {
           <h1 id="services">Serviços</h1>
           <p>
             A Sênior Saúde Móvel realiza atendimentos em fisioterapia em gerontologia e fisioterapia neurofuncional
-            para idosos fundamentado em evidências.Os tratamentos realizados baseiam-se nos seguintes pilares:
+            para idosos fundamentado em evidências. Os tratamentos realizados baseiam-se nos seguintes pilares:
           </p>
         </div>
       </ServicesTop>
@@ -195,41 +202,98 @@ export default function Index() {
       </ProfessionalsTitle>
 
       <Professionals>
-        <div>
-          <section>
-            <img src={Marcela} alt="Fisioterapeuta Marcela Pinheiro" />
-            <h1>Marcela Pimentel</h1>
-          </section>
 
-          <p>Mestranda em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB). Pós-graduanda em
-            Fisioterapia Neurofuncional Adulto e Infantil pela Faculdades Integradas de Patos (FIP). Atualmente, é
-            professora universitária na área de neurologia e pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde
-            (NUTES) desenvolvendo projetos voltados ao monitoramento remoto de idosos com uso da tecnologia. É membro do
-            Laboratório de Neurociências e Comportamento Aplicadas (LANEC/UEPB). Possui ampla experiência no tratamento
-            das doenças crônico-neurodegenerativas comuns do envelhecimento.</p>
-        </div>
+        <ProfessionalsItem>
+          <FlexColumn>
 
-        <div>
-          <section>
-            <img src={Eujessika} alt="Fisioterapeuta Eujessika Rodrigues" />
-            <h1>Eujessika Rodrigues</h1>
-          </section>
+            <FlexRow>
+              <section>
+                <img src={Marcela} alt="Fisioterapeuta Marcela Pinheiro" />
+              </section>
+              <ul>
+                <li>Mestranda em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB);</li>
+                <li>
+                  Pós-graduanda em Fisioterapia Neurofuncional Adulto e Infantil pela Faculdades Integradas de Patos
+                  (FIP);
+                </li>
+                <li>
+                  Atualmente, é professora universitária na área de neurologia e pesquisadora no Núcleo de Tecnologias
+                  Estratégicas em
+                  Saúde (NUTES) desenvolvendo projetos voltados ao monitoramento remoto de idosos com uso da tecnologia;
+                </li>
+                <li>Membro do Laboratório de Neurociências e Comportamento Aplicadas (LANEC/UEPB);</li>
+                <li>Possui ampla experiência no tratamento das doenças crônico-neurodegenerativas comuns do
+                  envelhecimento.
+                </li>
+              </ul>
+            </FlexRow>
 
-          <p>Doutoranda pela Universidade Federal do Rio Grande do Norte (UFRN) atuando na linha de pesquisa: avaliação
-            e intervenção no processo de envelhecimento. Mestre em Ciências e Tecnologia em Saúde pela Universidade
-            Estadual da Paraíba (UEPB). Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes.
-            Bacharelado em Fisioterapia pela Universidade Estadual da Paraíba. Atualmente, é pesquisadora no Núcleo de
-            Tecnologias Estratégicas em Saúde (NUTES/UEPB) e atua como membro do Grupo de Estudo em Fisioterapia
-            Geriátrica e Epidemiologia da UFRN, desenvolvendo projetos baseados em tecnologia para monitoramento remoto
-            de idosos.</p>
-        </div>
+            <FlexRowSpaceBetween>
+
+              <ProfessionalsName>Marcela Pimentel</ProfessionalsName>
+
+              <FlexRow>
+                <SocialNetworksItem
+                  href="https://www.instagram.com/fisiomarcelapimentel"
+                  target="_blank">
+                  <img src={Instagram} alt="Instagram de Marcela Pimentel" width={24} height={24} />
+                  <p>@fisiomarcelapimentel</p>
+                </SocialNetworksItem>
+              </FlexRow>
+
+            </FlexRowSpaceBetween>
+
+          </FlexColumn>
+        </ProfessionalsItem>
+
+        <ProfessionalsItem>
+          <FlexColumn>
+
+            <FlexRow>
+              <section>
+                <img src={Eujessika} alt="Fisioterapeuta Eujessika Rodrigues" />
+              </section>
+              <ul>
+                <li>Bacharel em Fisioterapia pela Universidade Estadual da Paraíba (UEPB);</li>
+                <li>Mestre em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba (UEPB);</li>
+                <li>Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes;</li>
+                <li>Doutoranda pela Universidade Federal do Rio Grande do Norte (UFRN);</li>
+                <li>Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES/UEPB);</li>
+                <li>Atua na linha de pesquisa sobre avaliação e intervenção no processo de envelhecimento;</li>
+                <li>Atua como membro do Grupo de Estudo em Fisioterapia Geriátrica e Epidemiologia da UFRN,
+                  desenvolvendo
+                  projetos baseados em tecnologia para monitoramento remoto de idosos.
+                </li>
+              </ul>
+            </FlexRow>
+
+            <FlexRowSpaceBetween>
+
+              <ProfessionalsName>Eujessika Rodrigues</ProfessionalsName>
+
+              <FlexRow>
+                <SocialNetworksItem
+                  href="https://www.instagram.com/eujessika"
+                  target="_blank">
+                  <img src={Instagram} alt="Instagram de Eujessika Rodrigues" width={24} height={24} />
+                  <p>@eujessika</p>
+                </SocialNetworksItem>
+              </FlexRow>
+
+            </FlexRowSpaceBetween>
+
+          </FlexColumn>
+        </ProfessionalsItem>
+
       </Professionals>
 
       <TextTechnology>
         <h1 id="tecnologies">Tecnologias</h1>
-        <p>A Sênior Saúde Móvel dispõe de tecnologias para acompanhamento remoto que vão além das sessões de
+        <p>
+          A Sênior Saúde Móvel dispõe de tecnologias para acompanhamento remoto que vão além das sessões de
           fisioterapia. O paciente é motivado a buscar hábitos de vida mais saudáveis com nossas aplicações e nossa
-          equipe presta assistência em tempo real. </p>
+          equipe presta assistência em tempo real.
+        </p>
       </TextTechnology>
 
     </MaxWidth>
@@ -242,7 +306,7 @@ export default function Index() {
 
     <Whatsapp>
       <a
-        href="https://api.whatsapp.com/send?phone=5583981124179&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Saude%20M%C3%B3vel!">
+        href="https://api.whatsapp.com/send?phone=5583981124179&text=Olá, tenho interesse na Sênior Saúde Móvel!">
         <i className="fa fa-whatsapp" />
       </a>
     </Whatsapp>
@@ -290,7 +354,7 @@ export default function Index() {
           </AddressMap>
 
           <p>Francisco Roberto, nº 108. Centenário, Campina Grande - PB.</p>
-          <p>58428-2</p>
+          <p>58.428-222</p>
 
         </Address>
 
