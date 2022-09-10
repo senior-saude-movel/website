@@ -245,6 +245,7 @@ export const About = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   color: #fff;
   min-height: 45vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
@@ -259,6 +260,7 @@ export const About = styled.div`
     display: flex;
     flex-direction: column;
     margin: 30px;
+    min-width: 360px;
 
     h1 {
       font-weight: bold;
@@ -277,6 +279,17 @@ export const About = styled.div`
     }
 
 
+  }
+
+  iframe {
+    margin: 0 50px 50px 50px;
+    width: 560px;
+    height: 315px;
+
+    @media screen  and (max-width: 768px ) {
+      width: 80%;
+      height: 360px;
+    }
   }
 
   @media screen  and (max-width: 768px ) {

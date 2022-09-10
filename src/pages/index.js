@@ -22,11 +22,8 @@ import {
   MaxWidth,
   Partners,
   PartnersContent,
-  PartnersHeader,
-  PrimaryButton,
-  Professionals,
-  ProfessionalsItem,
-  ProfessionalsName,
+  PartnersHeader, PrimaryButton,
+  Professionals, ProfessionalsItem, ProfessionalsName,
   ProfessionalsTitle,
   RotatePerspectiveOne,
   RotatePerspectiveTwo,
@@ -39,7 +36,6 @@ import {
   TextTechnology,
   Whatsapp,
 } from "./styles"
-import "../style.css"
 import Swiper from "../components/Swiper.js"
 import GlobalStyle from "../styles/reset"
 import Logo from "../assets/logo.svg"
@@ -127,14 +123,28 @@ export default function Index() {
 
     <MaxWidth>
       <About id="section_about">
+
         <img src={Healthy} alt="healthy" />
+
         <div>
           <h1>Sobre</h1>
           <p>A Sênior Saúde Móvel nasceu em Campina Grande, fruto dos projetos de doutorado e mestrado de duas
-            fisioterapeutas: Eujessika Rodrigues e Marcela Pimentel. Entusiastas do universo do envelhecimento humano,
-            as duas dedicam-se nos últimos anos à prestação de um atendimento fisioterapêutico cada vez mais inovador,
+            fisioterapeutas: Eujessika Rodrigues e Marcela Pimentel. Entusiastas do universo do
+            envelhecimento humano,
+            as duas dedicam-se nos últimos anos à prestação de um atendimento fisioterapêutico cada vez mais
+            inovador,
             personalizado, humanizado e que estimule a autonomia e a independência do idoso. </p>
         </div>
+
+
+        <iframe
+          src="https://www.youtube.com/embed/l44vICFRsww"
+          title="Sênior Saúde Movel - Visão Geral"
+          frameBorder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true} />
+
+
       </About>
     </MaxWidth>
 
@@ -143,8 +153,7 @@ export default function Index() {
         <FontAwesomeIcon icon={faCheckSquare} />
         <img src={Idea} alt="ideia" />
         <h1 id="innovation">Inovação</h1>
-        <p>
-          Após profunda dedicação em estudos nessa área, a Sênior Saúde Móvel implementou uma estratégia tecnológica
+        <p>Após profunda dedicação em estudos nessa área, a Sênior Saúde Móvel implementou uma estratégia tecnológica
           aos atendimentos fisioterapêuticos. Desenvolvemos um sistema de monitoramento remoto de idosos, que capta
           informações do paciente 24h por dia fazendo uso avançado de todo o potencial de relógios e pulseiras
           inteligentes. Esse serviço auxilia na avaliação continuada, oferecendo dados cruciais para predição de
@@ -160,7 +169,7 @@ export default function Index() {
           <h1 id="services">Serviços</h1>
           <p>
             A Sênior Saúde Móvel realiza atendimentos em fisioterapia em gerontologia e fisioterapia neurofuncional
-            para idosos fundamentado em evidências. Os tratamentos realizados baseiam-se nos seguintes pilares:
+            para idosos fundamentado em evidências.Os tratamentos realizados baseiam-se nos seguintes pilares:
           </p>
         </div>
       </ServicesTop>
@@ -173,7 +182,8 @@ export default function Index() {
           <i className="fa fa-edit" />
           <h1>Tratamento Personalizado</h1>
           <p>
-            O idoso é motivado à tornar-se corresponsável da sua evolução terapêutica. O paciente é um componente ativo
+            O idoso é motivado à tornar-se corresponsável da sua evolução terapêutica. O paciente é um
+            componente ativo
             do seu tratamento.
           </p>
         </div>
@@ -182,7 +192,8 @@ export default function Index() {
           <i className="fa fa-edit" />
           <h1>Autogerenciamento</h1>
           <p>
-            A estratégia terapêutica é definida para o nível funcional de cada idoso. Considerando as particularidades
+            A estratégia terapêutica é definida para o nível funcional de cada idoso. Considerando as
+            particularidades
             de cada indivíduo.
           </p>
         </div>
@@ -191,7 +202,8 @@ export default function Index() {
           <i className="fa fa-edit" />
           <h1>Funcionalidade</h1>
           <p>
-            Voltamos nosso olhar para muito além do diagnóstico clínico, focamos a nossa atenção para a queixa
+            Voltamos nosso olhar para muito além do diagnóstico clínico, focamos a nossa atenção para a
+            queixa
             funcional e valorizamos as potencialidades que cada idoso apresenta.
           </p>
         </div>
