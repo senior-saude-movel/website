@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import MedicalImg from "../assets/medical.svg"
+import styled from 'styled-components'
+import MedicalImg from '../assets/medical.svg'
 
-import { shade } from "polished"
-import InovationBg from "../assets/inovation.svg"
-import CheckIco from "../assets/check.svg"
+import { shade } from 'polished'
+import InovationBg from '../assets/inovation.svg'
+import CheckIco from '../assets/check.svg'
 
 export const Header = styled.header`
   width: 100%;
@@ -30,7 +30,7 @@ export const Content = styled.section`
 
   h1, h2, h3 {
     font-weight: bold;
-    color: #165d72;
+    color: #165C73;
     margin: 5px;
     text-align: center;
   }
@@ -75,11 +75,11 @@ export const TextTechnology = styled.div`
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
-    color: #165d72;
+    color: #165C73;
   }
 
   p {
-    color: #165d72;
+    color: #165C73;
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
@@ -102,7 +102,7 @@ export const Technologies = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
-  background-color: #165d72;
+  background-color: #165C73;
   min-height: 50vh;
   border-radius: 14px;
   margin: 10px;
@@ -146,7 +146,7 @@ export const Banner = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #20b3af;
+  color: #50BB98;
   min-height: 100vh;
   background-attachment: fixed;
   margin-top: 50px;
@@ -201,7 +201,7 @@ export const BannerContent = styled.div`
   p {
     padding: 5px;
     font-size: 16px;
-    color: #20b3af;
+    color: #50BB98;
     font-weight: bold;
   }
 
@@ -265,7 +265,7 @@ export const About = styled.div`
     h1 {
       font-weight: bold;
       font-size: 30px;
-      color: #165d72;
+      color: #165C73;
       flex: 1;
     }
 
@@ -273,7 +273,7 @@ export const About = styled.div`
       margin-top: 20px;
       flex: 1;
       text-align: justify;
-      color: #165d72;
+      color: #165C73;
       font-weight: bold;
       line-height: 0.8cm;
     }
@@ -331,7 +331,7 @@ export const Innovation = styled.div`
       text-align: center;
       font-weight: bold;
       font-size: 30px;
-      color: #165d72;
+      color: #165C73;
       flex: 1;
       margin: 30px;
     }
@@ -341,7 +341,7 @@ export const Innovation = styled.div`
       flex: 1;
       text-align: justify;
       max-width: 1326px;
-      color: #165d72;
+      color: #165C73;
       font-weight: bold;
       line-height: 0.8cm;
     }
@@ -395,7 +395,7 @@ export const PartnersHeader = styled.h1`
   margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: #165d72;
+  color: #165C73;
 `
 
 export const ServicesTop = styled.div`
@@ -416,14 +416,14 @@ export const ServicesTop = styled.div`
       margin-top: 20px;
       font-weight: bold;
       font-size: 30px;
-      color: #165d72;
+      color: #165C73;
       padding: 10px;
     }
 
     p {
       text-align: justify;
       font-size: 20px;
-      color: #165d72;
+      color: #165C73;
       font-weight: bold;
       line-height: 0.8cm;
     }
@@ -460,25 +460,25 @@ export const ServicesBottom = styled.div`
     display: flex;
     max-width: 350px;
     border: 1px dashed;
-    border-color: #20b3af;
+    border-color: #50BB98;
     border-radius: 10px;
 
     i {
-      color: #165d72;
+      color: #165C73;
       font-size: 30px;
       margin: 10px;
     }
 
     h1 {
       font-weight: bold;
-      color: #165d72;
+      color: #165C73;
       font-size: 25px;
       padding: 10px;
     }
 
     p {
       margin: 10px;
-      color: #165d72;
+      color: #165C73;
       text-align: justify;
       line-height: 0.8cm;
     }
@@ -509,7 +509,7 @@ export const ProfessionalsTitle = styled.h1`
   align-items: center;
   font-size: 30px;
   font-weight: bold;
-  color: #165d72;
+  color: #165C73;
   margin-bottom: 20px;
   margin-top: 40px;
 `
@@ -526,7 +526,7 @@ export const Professionals = styled.div`
 `
 
 export const ProfessionalsItem = styled.div`
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #165C73 0%, #50BB98 100%);
   border-radius: 15px;
   display: flex;
   flex: 1;
@@ -578,12 +578,12 @@ export const ProfessionalsItem = styled.div`
 
     ::-webkit-scrollbar-thumb {
       border-radius: 10px;
-      background-color: #165d72;
+      background-color: #165C73;
     }
 
     li {
       margin: 10px;
-      color: #165d72;
+      color: #165C73;
       font-size: 14px;
       font-weight: bold;
 
@@ -620,7 +620,7 @@ export const ProfessionalsName = styled.h1`
 `
 
 export const Footer = styled.div`
-  background-color: #165d72;
+  background-color: #165C73;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -647,7 +647,7 @@ export const Copyright = styled.div`
   align-items: center;
   flex: 1;
   background-size: cover;
-  background-color: #165d72;
+  background-color: #165C73;
 
   p {
     font-size: 15px;
@@ -854,19 +854,35 @@ export const PrimaryButton = styled.button`
   justify-content: center;
   min-height: 40px;
   min-width: 150px;
-  background: #20b3af;
+  background: #50BB98;
   margin: 10px;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 5px;
   color: #fff;
   border-radius: 10px;
-  border: 0;
   transition: background-color 0.2s;
   text-transform: uppercase;
-
+  border: 2px solid white;
+  
   &:hover {
-    background: ${shade(0.2, "#20b3af")};
+    background: ${shade(0.2, '#50BB98')};
     cursor: pointer;
+  }
+`
+
+export const TextShadow = styled.span`
+  color: #50BB98;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+  i {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
   }
 `
