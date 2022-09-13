@@ -1,8 +1,9 @@
-import styled from "styled-components"
-import MedicalImg from "../assets/medical.svg"
+import styled from 'styled-components'
+import MedicalImg from '../assets/medical.svg'
 
-import { shade } from "polished"
-import InovationBg from "../assets/inovation.svg"
+import { shade } from 'polished'
+import InovationBg from '../assets/inovation.svg'
+import CheckIco from '../assets/check.svg'
 
 export const Header = styled.header`
   width: 100%;
@@ -11,6 +12,7 @@ export const Header = styled.header`
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   position: fixed;
   z-index: 1000;
+  top: 0;
 `
 
 export const Content = styled.section`
@@ -28,7 +30,7 @@ export const Content = styled.section`
 
   h1, h2, h3 {
     font-weight: bold;
-    color: #165d72;
+    color: #165C73;
     margin: 5px;
     text-align: center;
   }
@@ -73,19 +75,20 @@ export const TextTechnology = styled.div`
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
-    color: #165d72;
+    color: #165C73;
   }
 
   p {
-    color: #165d72;
+    color: #165C73;
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    text-align: center;
+    max-width: 1250px;
+    text-align: justify;
     display: flex;
+    line-height: 0.8cm;
   }
 
   @media screen and (min-width: 320px) and (max-width: 768px ) {
@@ -99,7 +102,7 @@ export const Technologies = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
-  background-color: #165d72;
+  background-color: #165C73;
   min-height: 50vh;
   border-radius: 14px;
   margin: 10px;
@@ -143,9 +146,10 @@ export const Banner = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #20b3af;
+  color: #50BB98;
   min-height: 100vh;
   background-attachment: fixed;
+  margin-top: 50px;
 
   img {
     padding: 20px;
@@ -163,7 +167,7 @@ export const BannerPrimaryImage = styled.div`
   padding: 20px;
   width: 300px;
   margin-top: 50px;
-  
+
   @media screen and (max-width: 768px ) {
     margin-top: 150px;
     width: 200px;
@@ -197,7 +201,7 @@ export const BannerContent = styled.div`
   p {
     padding: 5px;
     font-size: 16px;
-    color: #20b3af;
+    color: #50BB98;
     font-weight: bold;
   }
 
@@ -241,6 +245,7 @@ export const About = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   color: #fff;
   min-height: 45vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
@@ -255,11 +260,12 @@ export const About = styled.div`
     display: flex;
     flex-direction: column;
     margin: 30px;
+    min-width: 360px;
 
     h1 {
       font-weight: bold;
       font-size: 30px;
-      color: #000;
+      color: #165C73;
       flex: 1;
     }
 
@@ -267,11 +273,23 @@ export const About = styled.div`
       margin-top: 20px;
       flex: 1;
       text-align: justify;
-      color: #000;
+      color: #165C73;
       font-weight: bold;
+      line-height: 0.8cm;
     }
 
 
+  }
+
+  iframe {
+    margin: 0 50px 50px 50px;
+    width: 560px;
+    height: 315px;
+
+    @media screen  and (max-width: 768px ) {
+      width: 80%;
+      height: 360px;
+    }
   }
 
   @media screen  and (max-width: 768px ) {
@@ -303,30 +321,29 @@ export const Innovation = styled.div`
 
   div {
     opacity: 0.9;
-    border-radius: 2%;
+    border-radius: 24px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 50px;
 
     h1 {
       text-align: center;
       font-weight: bold;
       font-size: 30px;
-      color: #000;
+      color: #165C73;
       flex: 1;
       margin: 30px;
     }
 
     p {
-      margin: 30px;
-      margin-top: 20px;
+      margin: 25px;
       flex: 1;
       text-align: justify;
-      line-height: 150%;
-      width: 600px;
-      color: #000;
+      max-width: 1326px;
+      color: #165C73;
       font-weight: bold;
+      line-height: 0.8cm;
     }
 
   }
@@ -378,7 +395,7 @@ export const PartnersHeader = styled.h1`
   margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
-  color: #165d72;
+  color: #165C73;
 `
 
 export const ServicesTop = styled.div`
@@ -389,7 +406,7 @@ export const ServicesTop = styled.div`
   margin-top: 40px;
 
   div {
-    width: 800px;
+    max-width: 1250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,15 +416,16 @@ export const ServicesTop = styled.div`
       margin-top: 20px;
       font-weight: bold;
       font-size: 30px;
-      color: #165d72;
+      color: #165C73;
       padding: 10px;
     }
 
     p {
-      text-align: center;
+      text-align: justify;
       font-size: 20px;
-      color: #165d72;
+      color: #165C73;
       font-weight: bold;
+      line-height: 0.8cm;
     }
   }
 
@@ -435,33 +453,34 @@ export const ServicesBottom = styled.div`
   div {
     margin: 20px;
     padding: 20px;
-    height: 100%;
+    height: 200px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
     max-width: 350px;
     border: 1px dashed;
-    border-color: #20b3af;
+    border-color: #50BB98;
     border-radius: 10px;
 
     i {
-      color: #165d72;
+      color: #165C73;
       font-size: 30px;
       margin: 10px;
     }
 
     h1 {
       font-weight: bold;
-      color: #165d72;
+      color: #165C73;
       font-size: 25px;
       padding: 10px;
     }
 
     p {
       margin: 10px;
-      color: #165d72;
+      color: #165C73;
       text-align: justify;
+      line-height: 0.8cm;
     }
 
   }
@@ -490,92 +509,118 @@ export const ProfessionalsTitle = styled.h1`
   align-items: center;
   font-size: 30px;
   font-weight: bold;
-  color: #165d72;
+  color: #165C73;
   margin-bottom: 20px;
   margin-top: 40px;
 `
 
 export const Professionals = styled.div`
-  flex: 1;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  min-height: 15vh;
+  @media screen and (min-width: 320px) and (max-width: 1024px ) {
+    flex-direction: column;
+  }
+`
 
+export const ProfessionalsItem = styled.div`
+  background-image: linear-gradient(15deg, #165C73 0%, #50BB98 100%);
+  border-radius: 15px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 5px;
 
-  div {
-    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-    flex: 1;
-    border-radius: 15px;
-    margin-left: 20px;
+  section {
+    margin: 0;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
 
-    section {
-      flex-direction: column;
-      display: flex;
-      align-items: center;
+    img {
+      border: 1px solid #fff;
       justify-content: center;
+      margin: 15px;
+      width: 230px;
+      border-radius: 10px;
+    }
+  }
 
-      img {
-        border: 1px solid #fff;
-        justify-content: center;
-        margin: 15px;
-        width: 230px;
-        border-radius: 10px;
-      }
+  ul {
+    padding: 10px;
+    margin: 18px 10px 25px 0;
+    border-radius: 15px 0 0 15px;
+    background-color: #FFFFFF;
+    text-align: justify;
+    max-height: 212px;
+    list-style-image: url(${CheckIco});
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 
-      h1 {
-
-        color: #fff;
-        font-size: 22px;
-        font-weight: bold;
-      }
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-color: #8D8C8E;
     }
 
-    p {
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      background-color: #8D8C8E;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #165C73;
+    }
+
+    li {
       margin: 10px;
-      color: #fff;
-      text-align: justify;
-      font-size: 16px;
+      color: #165C73;
+      font-size: 14px;
       font-weight: bold;
-    }
 
+    }
   }
 
   @media screen and (min-width: 320px) and (max-width: 1024px ) {
     flex-direction: column;
+    margin: 30px;
 
-    div {
-
-      flex-direction: column;
-      margin: 30px;
-      
-      section {
-
-        img {
-          justify-content: center;
-          margin: 20px;
-          border-radius: 10px;
-        }
+    section {
+      img {
+        justify-content: center;
+        margin: 20px;
+        border-radius: 10px;
       }
+    }
 
-      p {
-        width: 350px;
-        font-size: 15px;
-      }
-
+    p {
+      width: 350px;
+      font-size: 15px;
     }
 
   }
+
+`
+
+export const ProfessionalsName = styled.h1`
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+
 `
 
 export const Footer = styled.div`
-  background-color: #165d72;
+  background-color: #165C73;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -602,7 +647,7 @@ export const Copyright = styled.div`
   align-items: center;
   flex: 1;
   background-size: cover;
-  background-color: #165d72;
+  background-color: #165C73;
 
   p {
     font-size: 15px;
@@ -615,21 +660,41 @@ export const Whatsapp = styled.div`
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #20b3af;
+    bottom: 15px;
+    right: 15px;
+    background-color: #25D366;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
+    -webkit-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
     z-index: 1000;
+    animation: effect 5s infinite ease-in;
   }
 
   i {
     margin-top: 16px
   }
 
+  @keyframes effect {
+    20%, 100% {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+    }
+    0%, 10% {
+      width: 65px;
+      height: 65px;
+      font-size: 35px;
+    }
+    5% {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+    }
+  }
 `
 
 export const MaxWidth = styled.div`
@@ -670,9 +735,21 @@ export const SocialNetworks = styled.div`
 `
 
 export const SocialNetworksItem = styled.a`
+  display: flex;
   margin: 5px;
-  width: 24px;
-  height: 24px;
+  text-decoration: none;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    color: #FFFFFF;
+  }
 `
 
 export const SocialNetworksHeader = styled.h1`
@@ -687,6 +764,15 @@ export const FlexRow = styled.div`
   justify-content: center;
   align-items: center;
 `
+
+export const FlexRowSpaceBetween = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+`
+
 export const FlexColumn = styled.div`
   display: flex;
   flex-direction: column;
@@ -768,19 +854,35 @@ export const PrimaryButton = styled.button`
   justify-content: center;
   min-height: 40px;
   min-width: 150px;
-  background: #20b3af;
+  background: #50BB98;
   margin: 10px;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 5px;
   color: #fff;
   border-radius: 10px;
-  border: 0;
   transition: background-color 0.2s;
   text-transform: uppercase;
-
+  border: 2px solid white;
+  
   &:hover {
-    background: ${shade(0.2, "#20b3af")};
+    background: ${shade(0.2, '#50BB98')};
     cursor: pointer;
+  }
+`
+
+export const TextShadow = styled.span`
+  color: #50BB98;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+  i {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
   }
 `

@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Senior Saude Movel`,
+  title: `Senior Saúde Movel`,
   siteUrl: `https://www.seniorsaudemovel.com.br`,
-  description: `Saude na palma da sua mão.`,
+  description: `Saúde na palma da sua mão.`,
 };
