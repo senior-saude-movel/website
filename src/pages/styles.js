@@ -175,11 +175,11 @@ export const BannerPrimaryImage = styled.div`
 `
 
 export const RotatePerspectiveOne = styled.img`
-  transform: perspective(400px) rotateY(40deg);
+  transform: perspective(400px) rotateY(5deg);
 `
 
 export const RotatePerspectiveTwo = styled.img`
-  transform: perspective(400px) rotateY(-40deg);
+  transform: perspective(400px) rotateY(-5deg);
 `
 
 export const BannerContent = styled.div`
