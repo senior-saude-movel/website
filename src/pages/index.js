@@ -34,7 +34,6 @@ import {
     SocialNetworksItem,
     Technologies, TextShadow,
     TextTechnology,
-    Whatsapp
 } from './styles'
 import Swiper from '../components/Swiper.js'
 import GlobalStyle from '../styles/reset'
@@ -84,10 +83,6 @@ export default function Index() {
                             ENTRAR
                         </PrimaryButton>
                         <FlexRow>
-                            <TextShadow><i className="fa fa-whatsapp"/></TextShadow>
-                            <TextShadow>
-                                <h1>(83) 98112-4179</h1>
-                            </TextShadow>
                         </FlexRow>
                         <FlexRow>
                             <TextShadow><i className="fa fa-envelope"/></TextShadow>
@@ -144,10 +139,9 @@ export default function Index() {
                 <iframe
                     src="https://www.youtube.com/embed/hjPAp66mnSI"
                     title="Sênior Saúde Movel - Visão Geral"
-                    frameBorder="10"
                     style={{ borderRadius: '10px', border: '0', marginTop: '5vh' }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen={true}/>
+                    allowFullScreen={false}/>
             </About>
         </MaxWidth>
 
@@ -289,13 +283,6 @@ export default function Index() {
                 <Swiper/>
             </Technologies>
         </MaxWidth>
-
-        <Whatsapp>
-            <a
-                href="https://api.whatsapp.com/send?phone=5583981124179&text=Olá, tenho interesse na Sênior Saúde Móvel!">
-                <i className="fa fa-whatsapp"/>
-            </a>
-        </Whatsapp>
 
         <Partners>
             <PartnersHeader id="partners">
