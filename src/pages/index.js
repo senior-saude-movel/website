@@ -41,7 +41,6 @@ import GlobalStyle from '../styles/reset'
 import Logo from '../assets/logo.svg'
 import LogoWhite from '../assets/logo-white.svg'
 import Healthy from '../assets/healthy.jpeg'
-import Marcela from '../assets/professionals/marcela.jpg'
 import Eujessika from '../assets/professionals/eujessika.jpg'
 import LogoNutes from '../assets/logo-nutes.jpg'
 import LogoFapesq from '../assets/logo-fapesq.jpg'
@@ -144,7 +143,7 @@ export default function Index() {
 
 
                 <iframe
-                    src="https://www.youtube.com/embed/l44vICFRsww"
+                    src="https://www.youtube.com/watch?v=hjPAp66mnSI&t=19s"
                     title="Sênior Saúde Movel - Visão Geral"
                     frameBorder="10"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -222,59 +221,10 @@ export default function Index() {
             </ServicesBottom>
 
             <ProfessionalsTitle id="professioals">
-                Profissionais
+                Fundadora
             </ProfessionalsTitle>
 
             <Professionals>
-
-                <ProfessionalsItem>
-                    <FlexColumn>
-
-                        <FlexRow>
-                            <section>
-                                <img src={Marcela} alt="Fisioterapeuta Marcela Pinheiro"/>
-                            </section>
-                            <ul>
-                                <li>Mestranda em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba
-                                    (UEPB);
-                                </li>
-                                <li>
-                                    Pós-graduanda em Fisioterapia Neurofuncional Adulto e Infantil pela Faculdades
-                                    Integradas de Patos
-                                    (FIP);
-                                </li>
-                                <li>
-                                    Atualmente, é professora universitária na área de neurologia e pesquisadora no
-                                    Núcleo de Tecnologias
-                                    Estratégicas em
-                                    Saúde (NUTES) desenvolvendo projetos voltados ao monitoramento remoto de idosos com
-                                    uso da tecnologia;
-                                </li>
-                                <li>Membro do Laboratório de Neurociências e Comportamento Aplicadas (LANEC/UEPB);</li>
-                                <li>Possui ampla experiência no tratamento das doenças crônico-neurodegenerativas comuns
-                                    do
-                                    envelhecimento.
-                                </li>
-                            </ul>
-                        </FlexRow>
-
-                        <FlexRowSpaceBetween>
-
-                            <ProfessionalsName>Marcela Pimentel</ProfessionalsName>
-
-                            <FlexRow>
-                                <SocialNetworksItem
-                                    href="https://www.instagram.com/fisiomarcelapimentel"
-                                    target="_blank">
-                                    <img src={Instagram} alt="Instagram de Marcela Pimentel" width={24} height={24}/>
-                                    <p>@fisiomarcelapimentel</p>
-                                </SocialNetworksItem>
-                            </FlexRow>
-
-                        </FlexRowSpaceBetween>
-
-                    </FlexColumn>
-                </ProfessionalsItem>
 
                 <ProfessionalsItem>
                     <FlexColumn>
@@ -289,7 +239,7 @@ export default function Index() {
                                     (UEPB);
                                 </li>
                                 <li>Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes;</li>
-                                <li>Doutoranda pela Universidade Federal do Rio Grande do Norte (UFRN);</li>
+                                <li>Doutorado pela Universidade Federal do Rio Grande do Norte (UFRN);</li>
                                 <li>Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde
                                     (NUTES/UEPB);
                                 </li>
@@ -385,14 +335,14 @@ export default function Index() {
                     <AddressMap>
                         <iframe
                             title="Endereço da sênior saúde móvel."
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1192784031355!2d-35.9112600492167!3d-7.227233672953821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e23c2d3a25d%3A0x806a11e20c74d6e1!2sR.%20Francisco%20Roberto%2C%20108%20-%20Centen%C3%A1rio%2C%20Campina%20Grande%20-%20PB%2C%2058428-203!5e0!3m2!1spt-BR!2sbr!4v1624452468748!5m2!1spt-BR!2sbr"
+                            src="https://goo.gl/maps/eoEiCo1FEV1Hd9Gk6"
                             width="100%"
                             allowFullScreen=""
                             loading="lazy"/>
                     </AddressMap>
 
-                    <p>Francisco Roberto, nº 108. Centenário, Campina Grande - PB.</p>
-                    <p>58.428-222</p>
+                    <p>Av. Juvêncio Arruda, S/N - Universitário, Campina Grande - PB.</p>
+                    <p>58.429-600.</p>
 
                 </Address>
 
