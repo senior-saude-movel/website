@@ -515,11 +515,12 @@ export const ProfessionalsTitle = styled.h1`
 `
 
 export const Professionals = styled.div`
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-left: 20%;
   @media screen and (min-width: 320px) and (max-width: 1024px ) {
     flex-direction: column;
   }
@@ -555,7 +556,7 @@ export const ProfessionalsItem = styled.div`
   ul {
     padding: 10px;
     margin: 18px 10px 25px 0;
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px;
     background-color: #FFFFFF;
     text-align: justify;
     max-height: 212px;

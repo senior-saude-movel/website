@@ -40,7 +40,7 @@ import GlobalStyle from '../styles/reset'
 import Logo from '../assets/logo.svg'
 import LogoWhite from '../assets/logo-white.svg'
 import Healthy from '../assets/healthy.jpeg'
-import Eujessika from '../assets/professionals/eujessika.jpg'
+import Eujessika from '../assets/professionals/eujessika.jpeg'
 import LogoNutes from '../assets/logo-nutes.jpg'
 import LogoFapesq from '../assets/logo-fapesq.jpg'
 import LogoCentelha from '../assets/logo-centelha.jpg'
@@ -136,12 +136,6 @@ export default function Index() {
                         personalizado, humanizado e que estimule a autonomia e a independência do idoso. </p>
                 </div>
 
-                <iframe
-                    src="https://www.youtube.com/embed/hjPAp66mnSI"
-                    title="Sênior Saúde Movel - Visão Geral"
-                    style={{ borderRadius: '10px', border: '0', marginTop: '5vh' }}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen={false}/>
             </About>
         </MaxWidth>
 
@@ -226,23 +220,9 @@ export default function Index() {
                                 <img src={Eujessika} alt="Fisioterapeuta Eujessika Rodrigues"/>
                             </section>
                             <ul>
-                                <li>Bacharel em Fisioterapia pela Universidade Estadual da Paraíba (UEPB);</li>
-                                <li>Mestre em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba
-                                    (UEPB);
-                                </li>
-                                <li>Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes;</li>
-                                <li>Doutorado pela Universidade Federal do Rio Grande do Norte (UFRN);</li>
-                                <li>Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde
-                                    (NUTES/UEPB);
-                                </li>
-                                <li>Atua na linha de pesquisa sobre avaliação e intervenção no processo de
-                                    envelhecimento;
-                                </li>
-                                <li>Atua como membro do Grupo de Estudo em Fisioterapia Geriátrica e Epidemiologia da
-                                    UFRN,
-                                    desenvolvendo
-                                    projetos baseados em tecnologia para monitoramento remoto de idosos.
-                                </li>
+                                <li>Dra. Eujessika Rodrigues</li>
+                                <li>Fundadora da Startup Sênior Saúde Móvel</li>
+                                <li>Pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES/UEPB)</li>
                             </ul>
                         </FlexRow>
 
@@ -338,16 +318,6 @@ export default function Index() {
                     </SocialNetworksHeader>
 
                     <FlexRow>
-                        {/*<SocialNetworksItem*/}
-                        {/*  href="https://www.youtube.com/watch?v=l44vICFRsww&t=39s&ab_channel=TVNUTES-UEPB"*/}
-                        {/*  target="_blank">*/}
-                        {/*  <img src={Youtube} alt="Youtube da sênior saúde móvel" width={24} height={24} />*/}
-                        {/*</SocialNetworksItem>*/}
-                        {/*<SocialNetworksItem*/}
-                        {/*  href="https://www.facebook.com/seniorsaudemovel"*/}
-                        {/*  target="_blank">*/}
-                        {/*  <img src={Facebook} alt="Facebook da sênior saúde móvel" width={24} height={24} />*/}
-                        {/*</SocialNetworksItem>*/}
                         <SocialNetworksItem
                             href="https://www.instagram.com/seniorsaudemovel"
                             target="_blank">
