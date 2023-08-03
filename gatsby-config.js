@@ -105,6 +105,15 @@ module.exports = {
                 ],
                 display: 'swap'
             }
+        },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                policy: [
+                    {userAgent: 'Twitterbot', disallow: ''},
+                    {userAgent: '*', disallow: '/'}
+                ]
+            }
         }
     ]
 }

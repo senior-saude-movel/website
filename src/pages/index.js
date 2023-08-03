@@ -34,14 +34,13 @@ import {
     SocialNetworksItem,
     Technologies, TextShadow,
     TextTechnology,
-    Whatsapp
 } from './styles'
 import Swiper from '../components/Swiper.js'
 import GlobalStyle from '../styles/reset'
 import Logo from '../assets/logo.svg'
 import LogoWhite from '../assets/logo-white.svg'
 import Healthy from '../assets/healthy.jpeg'
-import Eujessika from '../assets/professionals/eujessika.jpg'
+import Eujessika from '../assets/professionals/eujessika.jpeg'
 import LogoNutes from '../assets/logo-nutes.jpg'
 import LogoFapesq from '../assets/logo-fapesq.jpg'
 import LogoCentelha from '../assets/logo-centelha.jpg'
@@ -84,10 +83,6 @@ export default function Index() {
                             ENTRAR
                         </PrimaryButton>
                         <FlexRow>
-                            <TextShadow><i className="fa fa-whatsapp"/></TextShadow>
-                            <TextShadow>
-                                <h1>(83) 98112-4179</h1>
-                            </TextShadow>
                         </FlexRow>
                         <FlexRow>
                             <TextShadow><i className="fa fa-envelope"/></TextShadow>
@@ -140,15 +135,6 @@ export default function Index() {
                         inovador,
                         personalizado, humanizado e que estimule a autonomia e a independência do idoso. </p>
                 </div>
-
-
-                <iframe
-                    src="https://www.youtube.com/watch?v=hjPAp66mnSI&t=19s"
-                    title="Sênior Saúde Movel - Visão Geral"
-                    frameBorder="10"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen={true}/>
-
 
             </About>
         </MaxWidth>
@@ -234,23 +220,9 @@ export default function Index() {
                                 <img src={Eujessika} alt="Fisioterapeuta Eujessika Rodrigues"/>
                             </section>
                             <ul>
-                                <li>Bacharel em Fisioterapia pela Universidade Estadual da Paraíba (UEPB);</li>
-                                <li>Mestre em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba
-                                    (UEPB);
-                                </li>
-                                <li>Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes;</li>
-                                <li>Doutorado pela Universidade Federal do Rio Grande do Norte (UFRN);</li>
-                                <li>Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde
-                                    (NUTES/UEPB);
-                                </li>
-                                <li>Atua na linha de pesquisa sobre avaliação e intervenção no processo de
-                                    envelhecimento;
-                                </li>
-                                <li>Atua como membro do Grupo de Estudo em Fisioterapia Geriátrica e Epidemiologia da
-                                    UFRN,
-                                    desenvolvendo
-                                    projetos baseados em tecnologia para monitoramento remoto de idosos.
-                                </li>
+                                <li>Dra. Eujessika Rodrigues</li>
+                                <li>Fundadora da Startup Sênior Saúde Móvel</li>
+                                <li>Pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES/UEPB)</li>
                             </ul>
                         </FlexRow>
 
@@ -292,13 +264,6 @@ export default function Index() {
             </Technologies>
         </MaxWidth>
 
-        <Whatsapp>
-            <a
-                href="https://api.whatsapp.com/send?phone=5583981124179&text=Olá, tenho interesse na Sênior Saúde Móvel!">
-                <i className="fa fa-whatsapp"/>
-            </a>
-        </Whatsapp>
-
         <Partners>
             <PartnersHeader id="partners">
                 Patrocinadores
@@ -335,7 +300,7 @@ export default function Index() {
                     <AddressMap>
                         <iframe
                             title="Endereço da sênior saúde móvel."
-                            src="https://goo.gl/maps/eoEiCo1FEV1Hd9Gk6"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1192784031355!2d-35.9112600492167!3d-7.227233672953821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e23c2d3a25d%3A0x806a11e20c74d6e1!2sR.%20Francisco%20Roberto%2C%20108%20-%20Centen%C3%A1rio%2C%20Campina%20Grande%20-%20PB%2C%2058428-203!5e0!3m2!1spt-BR!2sbr!4v1624452468748!5m2!1spt-BR!2sbr"
                             width="100%"
                             allowFullScreen=""
                             loading="lazy"/>
@@ -353,16 +318,6 @@ export default function Index() {
                     </SocialNetworksHeader>
 
                     <FlexRow>
-                        {/*<SocialNetworksItem*/}
-                        {/*  href="https://www.youtube.com/watch?v=l44vICFRsww&t=39s&ab_channel=TVNUTES-UEPB"*/}
-                        {/*  target="_blank">*/}
-                        {/*  <img src={Youtube} alt="Youtube da sênior saúde móvel" width={24} height={24} />*/}
-                        {/*</SocialNetworksItem>*/}
-                        {/*<SocialNetworksItem*/}
-                        {/*  href="https://www.facebook.com/seniorsaudemovel"*/}
-                        {/*  target="_blank">*/}
-                        {/*  <img src={Facebook} alt="Facebook da sênior saúde móvel" width={24} height={24} />*/}
-                        {/*</SocialNetworksItem>*/}
                         <SocialNetworksItem
                             href="https://www.instagram.com/seniorsaudemovel"
                             target="_blank">
@@ -383,5 +338,3 @@ export default function Index() {
     </React.Fragment>
 
 }
-
-
