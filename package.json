@@ -2,7 +2,7 @@
   "name": "website-senior-saude-movel",
   "private": true,
   "description": "Sênior Saúde Móvel company website.",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
