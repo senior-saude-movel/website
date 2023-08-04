@@ -34,15 +34,13 @@ import {
     SocialNetworksItem,
     Technologies, TextShadow,
     TextTechnology,
-    Whatsapp
 } from './styles'
 import Swiper from '../components/Swiper.js'
 import GlobalStyle from '../styles/reset'
 import Logo from '../assets/logo.svg'
 import LogoWhite from '../assets/logo-white.svg'
 import Healthy from '../assets/healthy.jpeg'
-import Marcela from '../assets/professionals/marcela.jpg'
-import Eujessika from '../assets/professionals/eujessika.jpg'
+import Eujessika from '../assets/professionals/eujessika.jpeg'
 import LogoNutes from '../assets/logo-nutes.jpg'
 import LogoFapesq from '../assets/logo-fapesq.jpg'
 import LogoCentelha from '../assets/logo-centelha.jpg'
@@ -85,10 +83,6 @@ export default function Index() {
                             ENTRAR
                         </PrimaryButton>
                         <FlexRow>
-                            <TextShadow><i className="fa fa-whatsapp"/></TextShadow>
-                            <TextShadow>
-                                <h1>(83) 98112-4179</h1>
-                            </TextShadow>
                         </FlexRow>
                         <FlexRow>
                             <TextShadow><i className="fa fa-envelope"/></TextShadow>
@@ -134,22 +128,12 @@ export default function Index() {
 
                 <div>
                     <h1>Sobre</h1>
-                    <p>A Sênior Saúde Móvel nasceu em Campina Grande, fruto dos projetos de doutorado e mestrado de duas
-                        fisioterapeutas: Eujessika Rodrigues e Marcela Pimentel. Entusiastas do universo do
+                    <p>A Sênior Saúde Móvel nasceu em Campina Grande, fruto do projeto de doutorado e mestrado de Eujessika Rodrigues. Entusiasta do universo do
                         envelhecimento humano,
                         as duas dedicam-se nos últimos anos à prestação de um atendimento fisioterapêutico cada vez mais
                         inovador,
                         personalizado, humanizado e que estimule a autonomia e a independência do idoso. </p>
                 </div>
-
-
-                <iframe
-                    src="https://www.youtube.com/embed/l44vICFRsww"
-                    title="Sênior Saúde Movel - Visão Geral"
-                    frameBorder="10"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen={true}/>
-
 
             </About>
         </MaxWidth>
@@ -222,7 +206,7 @@ export default function Index() {
             </ServicesBottom>
 
             <ProfessionalsTitle id="professioals">
-                Profissionais
+                Fundadora
             </ProfessionalsTitle>
 
             <Professionals>
@@ -232,75 +216,12 @@ export default function Index() {
 
                         <FlexRow>
                             <section>
-                                <img src={Marcela} alt="Fisioterapeuta Marcela Pinheiro"/>
-                            </section>
-                            <ul>
-                                <li>Mestranda em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba
-                                    (UEPB);
-                                </li>
-                                <li>
-                                    Pós-graduanda em Fisioterapia Neurofuncional Adulto e Infantil pela Faculdades
-                                    Integradas de Patos
-                                    (FIP);
-                                </li>
-                                <li>
-                                    Atualmente, é professora universitária na área de neurologia e pesquisadora no
-                                    Núcleo de Tecnologias
-                                    Estratégicas em
-                                    Saúde (NUTES) desenvolvendo projetos voltados ao monitoramento remoto de idosos com
-                                    uso da tecnologia;
-                                </li>
-                                <li>Membro do Laboratório de Neurociências e Comportamento Aplicadas (LANEC/UEPB);</li>
-                                <li>Possui ampla experiência no tratamento das doenças crônico-neurodegenerativas comuns
-                                    do
-                                    envelhecimento.
-                                </li>
-                            </ul>
-                        </FlexRow>
-
-                        <FlexRowSpaceBetween>
-
-                            <ProfessionalsName>Marcela Pimentel</ProfessionalsName>
-
-                            <FlexRow>
-                                <SocialNetworksItem
-                                    href="https://www.instagram.com/fisiomarcelapimentel"
-                                    target="_blank">
-                                    <img src={Instagram} alt="Instagram de Marcela Pimentel" width={24} height={24}/>
-                                    <p>@fisiomarcelapimentel</p>
-                                </SocialNetworksItem>
-                            </FlexRow>
-
-                        </FlexRowSpaceBetween>
-
-                    </FlexColumn>
-                </ProfessionalsItem>
-
-                <ProfessionalsItem>
-                    <FlexColumn>
-
-                        <FlexRow>
-                            <section>
                                 <img src={Eujessika} alt="Fisioterapeuta Eujessika Rodrigues"/>
                             </section>
                             <ul>
-                                <li>Bacharel em Fisioterapia pela Universidade Estadual da Paraíba (UEPB);</li>
-                                <li>Mestre em Ciências e Tecnologia em Saúde pela Universidade Estadual da Paraíba
-                                    (UEPB);
-                                </li>
-                                <li>Especialista em Traumato Ortopedia pela Faculdade Nossa Senhora de Lourdes;</li>
-                                <li>Doutoranda pela Universidade Federal do Rio Grande do Norte (UFRN);</li>
-                                <li>Atualmente, é pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde
-                                    (NUTES/UEPB);
-                                </li>
-                                <li>Atua na linha de pesquisa sobre avaliação e intervenção no processo de
-                                    envelhecimento;
-                                </li>
-                                <li>Atua como membro do Grupo de Estudo em Fisioterapia Geriátrica e Epidemiologia da
-                                    UFRN,
-                                    desenvolvendo
-                                    projetos baseados em tecnologia para monitoramento remoto de idosos.
-                                </li>
+                                <li>Dra. Eujessika Rodrigues</li>
+                                <li>Fundadora da Startup Sênior Saúde Móvel</li>
+                                <li>Pesquisadora no Núcleo de Tecnologias Estratégicas em Saúde (NUTES/UEPB)</li>
                             </ul>
                         </FlexRow>
 
@@ -341,13 +262,6 @@ export default function Index() {
                 <Swiper/>
             </Technologies>
         </MaxWidth>
-
-        <Whatsapp>
-            <a
-                href="https://api.whatsapp.com/send?phone=5583981124179&text=Olá, tenho interesse na Sênior Saúde Móvel!">
-                <i className="fa fa-whatsapp"/>
-            </a>
-        </Whatsapp>
 
         <Partners>
             <PartnersHeader id="partners">
@@ -391,8 +305,8 @@ export default function Index() {
                             loading="lazy"/>
                     </AddressMap>
 
-                    <p>Francisco Roberto, nº 108. Centenário, Campina Grande - PB.</p>
-                    <p>58.428-222</p>
+                    <p>Av. Juvêncio Arruda, S/N - Universitário, Campina Grande - PB.</p>
+                    <p>58.429-600.</p>
 
                 </Address>
 
@@ -403,16 +317,6 @@ export default function Index() {
                     </SocialNetworksHeader>
 
                     <FlexRow>
-                        {/*<SocialNetworksItem*/}
-                        {/*  href="https://www.youtube.com/watch?v=l44vICFRsww&t=39s&ab_channel=TVNUTES-UEPB"*/}
-                        {/*  target="_blank">*/}
-                        {/*  <img src={Youtube} alt="Youtube da sênior saúde móvel" width={24} height={24} />*/}
-                        {/*</SocialNetworksItem>*/}
-                        {/*<SocialNetworksItem*/}
-                        {/*  href="https://www.facebook.com/seniorsaudemovel"*/}
-                        {/*  target="_blank">*/}
-                        {/*  <img src={Facebook} alt="Facebook da sênior saúde móvel" width={24} height={24} />*/}
-                        {/*</SocialNetworksItem>*/}
                         <SocialNetworksItem
                             href="https://www.instagram.com/seniorsaudemovel"
                             target="_blank">
@@ -433,5 +337,3 @@ export default function Index() {
     </React.Fragment>
 
 }
-
-

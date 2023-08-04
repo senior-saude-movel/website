@@ -175,11 +175,11 @@ export const BannerPrimaryImage = styled.div`
 `
 
 export const RotatePerspectiveOne = styled.img`
-  transform: perspective(400px) rotateY(40deg);
+  transform: perspective(400px) rotateY(5deg);
 `
 
 export const RotatePerspectiveTwo = styled.img`
-  transform: perspective(400px) rotateY(-40deg);
+  transform: perspective(400px) rotateY(-5deg);
 `
 
 export const BannerContent = styled.div`
@@ -515,11 +515,12 @@ export const ProfessionalsTitle = styled.h1`
 `
 
 export const Professionals = styled.div`
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-left: 20%;
   @media screen and (min-width: 320px) and (max-width: 1024px ) {
     flex-direction: column;
   }
@@ -555,7 +556,7 @@ export const ProfessionalsItem = styled.div`
   ul {
     padding: 10px;
     margin: 18px 10px 25px 0;
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px;
     background-color: #FFFFFF;
     text-align: justify;
     max-height: 212px;
@@ -652,48 +653,6 @@ export const Copyright = styled.div`
   p {
     font-size: 15px;
     font-weight: bold;
-  }
-`
-
-export const Whatsapp = styled.div`
-  a {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 15px;
-    right: 15px;
-    background-color: #25D366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    -webkit-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    z-index: 1000;
-    animation: effect 5s infinite ease-in;
-  }
-
-  i {
-    margin-top: 16px
-  }
-
-  @keyframes effect {
-    20%, 100% {
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
-    }
-    0%, 10% {
-      width: 65px;
-      height: 65px;
-      font-size: 35px;
-    }
-    5% {
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
-    }
   }
 `
 
