@@ -128,8 +128,7 @@ export default function Index() {
 
                 <div>
                     <h1>Sobre</h1>
-                    <p>A Sênior Saúde Móvel nasceu em Campina Grande, fruto dos projetos de doutorado e mestrado de duas
-                        fisioterapeutas: Eujessika Rodrigues e Marcela Pimentel. Entusiastas do universo do
+                    <p>A Sênior Saúde Móvel nasceu em Campina Grande, fruto do projeto de doutorado e mestrado de Eujessika Rodrigues. Entusiasta do universo do
                         envelhecimento humano,
                         as duas dedicam-se nos últimos anos à prestação de um atendimento fisioterapêutico cada vez mais
                         inovador,
