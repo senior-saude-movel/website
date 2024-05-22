@@ -418,6 +418,12 @@ export const ServicesTop = styled.div`
       font-size: 30px;
       color: #165C73;
       padding: 10px;
+
+      i {
+        color: #165C73;
+        font-size: 30px;
+        margin: 10px;
+      }
     }
 
     p {
@@ -425,6 +431,16 @@ export const ServicesTop = styled.div`
       font-size: 20px;
       color: #165C73;
       font-weight: bold;
+      line-height: 0.8cm;
+    }
+
+    ul {
+      list-style: inside;
+      color: #165C73;
+    }
+
+    li {
+      color: #165C73;
       line-height: 0.8cm;
     }
   }
@@ -453,7 +469,7 @@ export const ServicesBottom = styled.div`
   div {
     margin: 20px;
     padding: 20px;
-    height: 200px;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -474,6 +490,21 @@ export const ServicesBottom = styled.div`
       color: #165C73;
       font-size: 25px;
       padding: 10px;
+    }
+
+    ul {
+      list-style: inside;
+      color: #165C73;
+    }
+
+    li {
+      color: #165C73;
+      line-height: 0.8cm;
+    }
+
+    h2 {
+      font-weight: bold;
+      color: #165C73;
     }
 
     p {
@@ -502,6 +533,75 @@ export const ServicesBottom = styled.div`
     }
   }
 `
+
+
+export const ServicesBottomApple = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+
+  div {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed;
+    border-color: #50BB98;
+    border-radius: 10px;
+
+    i {
+      color: #165C73;
+      font-size: 30px;
+      margin: 10px;
+    }
+
+    h1 {
+      font-weight: bold;
+      color: #165C73;
+      font-size: 25px;
+      padding: 10px;
+    }
+    
+    ul {
+      list-style: inside;
+      color: #165C73;
+    }
+    
+    li {
+      color: #165C73;
+      line-height: 0.8cm;
+    }
+    
+    h2 {
+      font-weight: bold;
+      color: #165C73;
+    }
+
+    p {
+      margin: 10px;
+      color: #165C73;
+      text-align: justify;
+      line-height: 0.8cm;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    grid-template-columns: 1fr; /* Altera para uma coluna em telas menores */
+    
+    div {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+`;
+
 
 export const ProfessionalsTitle = styled.h1`
   display: flex;
@@ -658,7 +758,7 @@ export const Copyright = styled.div`
 
 export const MaxWidth = styled.div`
   max-width: 1500px;
-  margin: auto;
+  margin: 10px;
 `
 
 export const Address = styled.div`
