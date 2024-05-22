@@ -1,34 +1,20 @@
 import React from "react"
 import {
-    About, Address, AddressMap,
-    Banner,
-    BannerContent,
-    BannerPrimaryImage,
+    Address, AddressMap,
     Content, Copyright,
-    FlexColumn,
-    FlexRow,
-    FlexRowSpaceBetween, Footer,
+    FlexRow, Footer,
     Header,
     Innovation,
-    MaxWidth,
-    NotFoundContent, Partners, PartnersContent, PartnersHeader,
-    PrimaryButton,
-    Professionals,
-    ProfessionalsItem,
-    ProfessionalsName,
-    ProfessionalsTitle,
+    MaxWidth, Partners, PartnersContent, PartnersHeader, PrimaryButton,
     ServicesBottom, ServicesBottomApple,
     ServicesTop, SocialNetworks, SocialNetworksHeader,
-    SocialNetworksItem, TextTechnology
+    SocialNetworksItem
 } from './styles'
 import GlobalStyle from "../styles/reset"
 import Logo from "../assets/logo.svg"
-import LogoWhite from "../assets/logo-white.svg"
-import Healthy from '../assets/healthy.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 import Policy from '../assets/policy.svg'
-import Eujessika from '../assets/professionals/eujessika.jpeg'
 import Instagram from '../assets/social_networks/instagram.svg'
 import LogoNutes from '../assets/logo-nutes.jpg'
 import LogoCentelha from '../assets/logo-centelha.jpg'
@@ -59,6 +45,9 @@ export default function ApplePoliticaPrivacidade() {
                     <p>Este documento de Política de Privacidade descreve como coletamos, usamos, armazenamos e
                         protegemos suas informações pessoais. Ao usar nosso App, você concorda com as práticas descritas nesta política.
                     </p>
+                    <PrimaryButton onClick={() => window.location.href = "/"}>
+                        Voltar para página inicial
+                    </PrimaryButton>
                 </MaxWidth>
             </Innovation>
         </div>
@@ -284,7 +273,7 @@ export default function ApplePoliticaPrivacidade() {
                     <AddressMap>
                         <iframe
                             title="Endereço da sênior saúde móvel."
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1192784031355!2d-35.9112600492167!3d-7.227233672953821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e23c2d3a25d%3A0x806a11e20c74d6e1!2sR.%20Francisco%20Roberto%2C%20108%20-%20Centen%C3%A1rio%2C%20Campina%20Grande%20-%20PB%2C%2058428-203!5e0!3m2!1spt-BR!2sbr!4v1624452468748!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.39184468452277!2d-35.91094809269672!3d-7.210064025236793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1f89b4472451%3A0x7d38bbc661779386!2sNUTES%20UEPB%20(Nucleo%20de%20Tecnologia%20em%20Sa%C3%BAde)!5e0!3m2!1spt-BR!2sbr!4v1716408479394!5m2!1spt-BR!2sbr"
                             width="100%"
                             allowFullScreen=""
                             loading="lazy"/>

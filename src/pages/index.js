@@ -109,8 +109,7 @@ export default function Index() {
                     </div>
                     <div>
                         <BadgesAppItem
-                            href="https://www.apple.com/pt/app-store/"
-                            target="_blank"
+                            href="/apple-politica-privacidade/"
                             rel="noopener noreferrer"
                             title="App Store">
                             <img src={AppStore} alt="Aplicativo sênior saúde móvel para plataforma IOS"/>
@@ -299,7 +298,7 @@ export default function Index() {
                     <AddressMap>
                         <iframe
                             title="Endereço da sênior saúde móvel."
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1192784031355!2d-35.9112600492167!3d-7.227233672953821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e23c2d3a25d%3A0x806a11e20c74d6e1!2sR.%20Francisco%20Roberto%2C%20108%20-%20Centen%C3%A1rio%2C%20Campina%20Grande%20-%20PB%2C%2058428-203!5e0!3m2!1spt-BR!2sbr!4v1624452468748!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.39184468452277!2d-35.91094809269672!3d-7.210064025236793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1f89b4472451%3A0x7d38bbc661779386!2sNUTES%20UEPB%20(Nucleo%20de%20Tecnologia%20em%20Sa%C3%BAde)!5e0!3m2!1spt-BR!2sbr!4v1716408479394!5m2!1spt-BR!2sbr"
                             width="100%"
                             allowFullScreen=""
                             loading="lazy"/>
