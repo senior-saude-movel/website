@@ -1,0 +1,3 @@
+# Netlify redirects — preserva o link antigo usado pelo app iOS
+/apple-politica-privacidade   /politica-de-privacidade/   301
+/apple-politica-privacidade/  /politica-de-privacidade/   301

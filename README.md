@@ -1,108 +1,82 @@
 <h1 align="center">
-  Web Site - Sênior Saúde Móvel
+  Web Site — Sênior Saúde Móvel
 </h1>
+
 <p align="center">
-Developed using React + Gatsby
+  Landing page institucional da Sênior Saúde Móvel.<br/>
+  Desenvolvida com <strong>Next.js (App Router) + TypeScript + Tailwind CSS</strong>.
 </p>
 
-<p align="center">  
-  <a href="https://pt-br.reactjs.org/">
-    <img alt="Gatsby" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2560px-React-icon.svg.png" width="34" />
-  </a>
+## 🚀 Começando
 
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="24" />
-  </a>
-</p>
-
-## 🚀 Quick start
-
-1. **Clone project.**
-
-   
-
-   ```shell  
-   git clone git@github.com:senior-saude-movel/website.git
-   ```
-
-2. **Run Server in Development Mode**
-
-   Navigate into your new site’s directory and start it up.
+1. **Clone o projeto**
 
    ```shell
-   cd web-site
-   npm run start
+   git clone git@github.com:senior-saude-movel/website.git
+   cd website
    ```
 
-3. **Open the source code and start editing!**
+2. **Instale as dependências**
 
-   Your site is now running at `http://localhost:8000`!
+   ```shell
+   npm install
+   ```
 
-   _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment
-   with querying your data. Learn more about using this tool in
-   the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+3. **Rode em modo de desenvolvimento**
 
-## 🧐 What's inside?
+   ```shell
+   npm run dev
+   ```
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+   O site estará disponível em `http://localhost:3000`.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## 📦 Scripts
 
-1. **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages)
-   are automatically installed.
+| Comando          | Descrição                                              |
+| ---------------- | ------------------------------------------------------ |
+| `npm run dev`    | Inicia o servidor de desenvolvimento.                  |
+| `npm run build`  | Gera o build estático em `out/` (`output: 'export'`).  |
+| `npm run start`  | Serve o build de produção localmente.                  |
+| `npm run lint`   | Executa o ESLint.                                      |
+| `npm run format` | Formata o código com Prettier.                         |
 
-2. **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (
-   what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+## 🧐 Estrutura
 
-3. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+```
+.
+├── public/                 # Assets estáticos
+│   ├── brand/              # Logos da marca
+│   ├── features/           # Ícones de funcionalidades (sono, frequência, etc.)
+│   ├── screens/            # Capturas de tela do app e da plataforma web
+│   ├── partners/           # Logos dos parceiros
+│   └── _redirects          # Redirecionamentos do Netlify
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx                       # Layout raiz + metadados/SEO
+│   │   ├── page.tsx                         # Landing page
+│   │   ├── politica-de-privacidade/         # Política de Privacidade
+│   │   ├── termos-de-uso/                   # Termos de Uso
+│   │   ├── globals.css                      # Estilos globais + Tailwind
+│   │   ├── robots.ts / sitemap.ts           # SEO
+│   │   └── not-found.tsx                     # Página 404
+│   ├── components/         # Navbar, Footer, ScreensMarquee, LegalShell
+│   └── lib/site.ts         # Dados e constantes do site (contato, links)
+├── next.config.mjs        # Configuração do Next.js (export estático)
+└── tailwind.config.ts     # Tema e paleta de cores da marca
+```
 
-4. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep
-   the formatting of your code consistent.
+## 🎨 Paleta da marca
 
-5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of
-   the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension
-   of default Gatsby settings affecting the browser.
-
-6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify
-   information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to
-   include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of
-   the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of
-   default Gatsby settings affecting pieces of the site build process.
-
-8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of
-   the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization
-   of default Gatsby settings affecting server-side rendering.
-
-9. **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the
-    exact versions of your npm dependencies that were installed for your project. **(You won’t change this file
-    directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name,
-    author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are
-some places to start:
+| Token            | Cor       |
+| ---------------- | --------- |
+| `primary`        | `#5e929f` |
+| `primary-dark`   | `#53828d` |
+| `secondary`      | `#1a475c` |
+| `surface`        | `#f0f0f0` |
+| `muted`          | `#6a6a6a` |
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+O deploy é feito automaticamente no **Netlify** a cada push na branch `master`
+(ver `.github/workflows/main.yml`). O build estático é publicado a partir do
+diretório `out/`.
