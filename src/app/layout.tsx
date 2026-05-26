@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     'telemonitoramento',
   ],
   authors: [{ name: site.name }],
+  verification: {
+    google: 'uuh7bO3Ekur-Cji1dIkQVv_Pkl_sj3XKQpnpD3IFHNE',
+  },
   icons: {
     icon: '/brand/favicon.png',
     apple: '/brand/logo-192.png',
